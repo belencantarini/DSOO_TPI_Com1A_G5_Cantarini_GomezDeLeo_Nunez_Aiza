@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AFBDA593-9195-4B6D-817B-45DE31F80A12}|DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza.csproj|c:\\users\\belen\\source\\repos\\dsoo_tpi_g5_cantarini_gomezdeleo_nunez_aiza\\dsoo_tpi_g5_cantarini_gomezdeleo_nunez_aiza\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFBDA593-9195-4B6D-817B-45DE31F80A12}|DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza.csproj|solutionrelative:dsoo_tpi_g5_cantarini_gomezdeleo_nunez_aiza\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFBDA593-9195-4B6D-817B-45DE31F80A12}|DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza.csproj|c:\\users\\belen\\source\\repos\\dsoo_tpi_g5_cantarini_gomezdeleo_nunez_aiza\\dsoo_tpi_g5_cantarini_gomezdeleo_nunez_aiza\\formvencimientos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFBDA593-9195-4B6D-817B-45DE31F80A12}|DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza.csproj|solutionrelative:dsoo_tpi_g5_cantarini_gomezdeleo_nunez_aiza\\formvencimientos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFBDA593-9195-4B6D-817B-45DE31F80A12}|DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza.csproj|c:\\users\\belen\\source\\repos\\dsoo_tpi_g5_cantarini_gomezdeleo_nunez_aiza\\dsoo_tpi_g5_cantarini_gomezdeleo_nunez_aiza\\formlistaclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFBDA593-9195-4B6D-817B-45DE31F80A12}|DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza.csproj|solutionrelative:dsoo_tpi_g5_cantarini_gomezdeleo_nunez_aiza\\formlistaclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFBDA593-9195-4B6D-817B-45DE31F80A12}|DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza.csproj|c:\\users\\belen\\source\\repos\\dsoo_tpi_g5_cantarini_gomezdeleo_nunez_aiza\\dsoo_tpi_g5_cantarini_gomezdeleo_nunez_aiza\\forminscripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFBDA593-9195-4B6D-817B-45DE31F80A12}|DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza.csproj|solutionrelative:dsoo_tpi_g5_cantarini_gomezdeleo_nunez_aiza\\forminscripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFBDA593-9195-4B6D-817B-45DE31F80A12}|DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza.csproj|c:\\users\\belen\\source\\repos\\dsoo_tpi_g5_cantarini_gomezdeleo_nunez_aiza\\dsoo_tpi_g5_cantarini_gomezdeleo_nunez_aiza\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFBDA593-9195-4B6D-817B-45DE31F80A12}|DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza.csproj|solutionrelative:dsoo_tpi_g5_cantarini_gomezdeleo_nunez_aiza\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormLogin.cs",
+              "DocumentMoniker": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\FormLogin.cs",
+              "RelativeDocumentMoniker": "DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\FormLogin.cs",
+              "ToolTip": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\FormLogin.cs",
+              "RelativeToolTip": "DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\FormLogin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T20:21:52.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormPrincipal.cs",
+              "DocumentMoniker": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\FormPrincipal.cs",
+              "RelativeDocumentMoniker": "DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\FormPrincipal.cs",
+              "ToolTip": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\FormPrincipal.cs",
+              "RelativeToolTip": "DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\FormPrincipal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T20:16:04.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormInscripcion.cs",
+              "DocumentMoniker": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\FormInscripcion.cs",
+              "RelativeDocumentMoniker": "DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\FormInscripcion.cs",
+              "ToolTip": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\FormInscripcion.cs",
+              "RelativeToolTip": "DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\FormInscripcion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T20:19:23.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormListaClientes.cs",
+              "DocumentMoniker": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\FormListaClientes.cs",
+              "RelativeDocumentMoniker": "DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\FormListaClientes.cs",
+              "ToolTip": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\FormListaClientes.cs",
+              "RelativeToolTip": "DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\FormListaClientes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T20:15:07.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormVencimientos.cs",
+              "DocumentMoniker": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\FormVencimientos.cs",
+              "RelativeDocumentMoniker": "DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\FormVencimientos.cs",
+              "ToolTip": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\FormVencimientos.cs",
+              "RelativeToolTip": "DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\FormVencimientos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T20:16:14.398Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
