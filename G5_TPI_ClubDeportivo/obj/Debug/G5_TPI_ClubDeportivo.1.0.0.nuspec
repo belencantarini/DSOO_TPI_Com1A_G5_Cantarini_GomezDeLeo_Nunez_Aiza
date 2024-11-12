@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>G5_TPI_ClubDeportivo</id>
+    <version>1.0.0</version>
+    <authors>G5_TPI_ClubDeportivo</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="c0bd499e9749f440a5a45adfee9c70056458372a" />
+    <dependencies>
+      <group targetFramework="net6.0-windows7.0">
+        <dependency id="MySql.Data" version="9.1.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net6.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WindowsForms" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="C:\Users\Belen\source\repos\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\G5_TPI_ClubDeportivo\bin\Debug\net6.0-windows\G5_TPI_ClubDeportivo.runtimeconfig.json" target="lib\net6.0-windows7.0\G5_TPI_ClubDeportivo.runtimeconfig.json" />
+    <file src="C:\Users\Belen\source\repos\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\G5_TPI_ClubDeportivo\bin\Debug\net6.0-windows\G5_TPI_ClubDeportivo.dll" target="lib\net6.0-windows7.0\G5_TPI_ClubDeportivo.dll" />
+  </files>
+</package>

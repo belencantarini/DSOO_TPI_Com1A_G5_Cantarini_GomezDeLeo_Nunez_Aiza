@@ -56,11 +56,13 @@
             // 
             // dtgvClientes
             // 
-            dtgvClientes.AllowUserToOrderColumns = true;
+            dtgvClientes.AllowUserToAddRows = false;
+            dtgvClientes.AllowUserToDeleteRows = false;
             dtgvClientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dtgvClientes.Columns.AddRange(new DataGridViewColumn[] { ClienteID, Apellido, Nombre, TipoDocumento, NumeroDocumento, FechaNacimiento, Edad, FechaInscripcion, AptoFisico, TipoCliente });
             dtgvClientes.Location = new Point(59, 112);
             dtgvClientes.Name = "dtgvClientes";
+            dtgvClientes.ReadOnly = true;
             dtgvClientes.RowHeadersWidth = 51;
             dtgvClientes.RowTemplate.Height = 29;
             dtgvClientes.Size = new Size(1087, 260);
@@ -72,6 +74,7 @@
             ClienteID.HeaderText = "ID de cliente";
             ClienteID.MinimumWidth = 6;
             ClienteID.Name = "ClienteID";
+            ClienteID.ReadOnly = true;
             ClienteID.Width = 125;
             // 
             // Apellido
@@ -79,6 +82,7 @@
             Apellido.HeaderText = "Apellido";
             Apellido.MinimumWidth = 6;
             Apellido.Name = "Apellido";
+            Apellido.ReadOnly = true;
             Apellido.Width = 125;
             // 
             // Nombre
@@ -86,6 +90,7 @@
             Nombre.HeaderText = "Nombre";
             Nombre.MinimumWidth = 6;
             Nombre.Name = "Nombre";
+            Nombre.ReadOnly = true;
             Nombre.Width = 125;
             // 
             // TipoDocumento
@@ -93,6 +98,7 @@
             TipoDocumento.HeaderText = "Tipo documento";
             TipoDocumento.MinimumWidth = 6;
             TipoDocumento.Name = "TipoDocumento";
+            TipoDocumento.ReadOnly = true;
             TipoDocumento.Width = 125;
             // 
             // NumeroDocumento
@@ -100,6 +106,7 @@
             NumeroDocumento.HeaderText = "Numero de documento";
             NumeroDocumento.MinimumWidth = 6;
             NumeroDocumento.Name = "NumeroDocumento";
+            NumeroDocumento.ReadOnly = true;
             NumeroDocumento.Width = 125;
             // 
             // FechaNacimiento
@@ -107,6 +114,7 @@
             FechaNacimiento.HeaderText = "Fecha de nacimiento";
             FechaNacimiento.MinimumWidth = 6;
             FechaNacimiento.Name = "FechaNacimiento";
+            FechaNacimiento.ReadOnly = true;
             FechaNacimiento.Visible = false;
             FechaNacimiento.Width = 125;
             // 
@@ -115,6 +123,7 @@
             Edad.HeaderText = "Edad";
             Edad.MinimumWidth = 6;
             Edad.Name = "Edad";
+            Edad.ReadOnly = true;
             Edad.Width = 125;
             // 
             // FechaInscripcion
@@ -122,6 +131,7 @@
             FechaInscripcion.HeaderText = "Fecha de inscripcion";
             FechaInscripcion.MinimumWidth = 6;
             FechaInscripcion.Name = "FechaInscripcion";
+            FechaInscripcion.ReadOnly = true;
             FechaInscripcion.Visible = false;
             FechaInscripcion.Width = 125;
             // 
@@ -130,6 +140,7 @@
             AptoFisico.HeaderText = "Apto físico";
             AptoFisico.MinimumWidth = 6;
             AptoFisico.Name = "AptoFisico";
+            AptoFisico.ReadOnly = true;
             AptoFisico.Width = 125;
             // 
             // TipoCliente
@@ -137,6 +148,7 @@
             TipoCliente.HeaderText = "Tipo de cliente";
             TipoCliente.MinimumWidth = 6;
             TipoCliente.Name = "TipoCliente";
+            TipoCliente.ReadOnly = true;
             TipoCliente.Width = 125;
             // 
             // lblListadoClientes

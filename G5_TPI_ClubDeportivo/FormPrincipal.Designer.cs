@@ -31,7 +31,6 @@
             lblIngreso = new Label();
             btnInscribirCliente = new Button();
             btnSocios = new Button();
-            btnNoSocios = new Button();
             btnPagos = new Button();
             btnVencimientos = new Button();
             btnSalirSesion = new Button();
@@ -60,37 +59,29 @@
             // 
             // btnSocios
             // 
-            btnSocios.Location = new Point(25, 218);
+            btnSocios.Location = new Point(276, 251);
             btnSocios.Name = "btnSocios";
             btnSocios.Size = new Size(214, 89);
             btnSocios.TabIndex = 2;
-            btnSocios.Text = "Planes para Socios";
+            btnSocios.Text = "Planes para Socios y Actividades para No Socios";
             btnSocios.UseVisualStyleBackColor = true;
-            // 
-            // btnNoSocios
-            // 
-            btnNoSocios.Location = new Point(25, 331);
-            btnNoSocios.Name = "btnNoSocios";
-            btnNoSocios.Size = new Size(214, 89);
-            btnNoSocios.TabIndex = 4;
-            btnNoSocios.Text = "Actividades para No Socios";
-            btnNoSocios.UseVisualStyleBackColor = true;
+            btnSocios.Click += btnSocios_Click;
             // 
             // btnPagos
             // 
-            btnPagos.Location = new Point(276, 218);
+            btnPagos.Location = new Point(25, 251);
             btnPagos.Name = "btnPagos";
             btnPagos.Size = new Size(214, 89);
             btnPagos.TabIndex = 3;
-            btnPagos.Text = "Pagar Membresia y Actividades";
+            btnPagos.Text = "Pagar Membresias y Actividades";
             btnPagos.UseVisualStyleBackColor = true;
             btnPagos.Click += btnPagos_Click;
             // 
             // btnVencimientos
             // 
-            btnVencimientos.Location = new Point(276, 331);
+            btnVencimientos.Location = new Point(25, 391);
             btnVencimientos.Name = "btnVencimientos";
-            btnVencimientos.Size = new Size(214, 89);
+            btnVencimientos.Size = new Size(465, 62);
             btnVencimientos.TabIndex = 5;
             btnVencimientos.Text = "Ver vencimientos del día";
             btnVencimientos.UseVisualStyleBackColor = true;
@@ -98,7 +89,7 @@
             // 
             // btnSalirSesion
             // 
-            btnSalirSesion.Location = new Point(182, 450);
+            btnSalirSesion.Location = new Point(167, 530);
             btnSalirSesion.Name = "btnSalirSesion";
             btnSalirSesion.Size = new Size(179, 48);
             btnSalirSesion.TabIndex = 6;
@@ -125,7 +116,6 @@
             Controls.Add(btnSalirSesion);
             Controls.Add(btnVencimientos);
             Controls.Add(btnPagos);
-            Controls.Add(btnNoSocios);
             Controls.Add(btnSocios);
             Controls.Add(btnInscribirCliente);
             Controls.Add(lblIngreso);
@@ -142,7 +132,6 @@
         private Label lblIngreso;
         private Button btnInscribirCliente;
         private Button btnSocios;
-        private Button btnNoSocios;
         private Button btnPagos;
         private Button btnVencimientos;
         private Button btnSalirSesion;

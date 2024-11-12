@@ -1559,11 +1559,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Belen\\source\\repos\\G5_TPI_ClubDeportivo\\G5_TPI_ClubDeportivo\\G5_TPI_ClubDeportivo.csproj",
+      "projectUniqueName": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\G5_TPI_ClubDeportivo\\G5_TPI_ClubDeportivo.csproj",
       "projectName": "G5_TPI_ClubDeportivo",
-      "projectPath": "C:\\Users\\Belen\\source\\repos\\G5_TPI_ClubDeportivo\\G5_TPI_ClubDeportivo\\G5_TPI_ClubDeportivo.csproj",
+      "projectPath": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\G5_TPI_ClubDeportivo\\G5_TPI_ClubDeportivo.csproj",
       "packagesPath": "C:\\Users\\Belen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Belen\\source\\repos\\G5_TPI_ClubDeportivo\\G5_TPI_ClubDeportivo\\obj\\",
+      "outputPath": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\G5_TPI_ClubDeportivo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

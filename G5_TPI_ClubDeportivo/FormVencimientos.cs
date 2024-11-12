@@ -38,19 +38,26 @@ namespace G5_TPI_ClubDeportivo
             try
             {
                 string query;
-                DataTable dtVencimientos = new DataTable();
                 sqlCon = Conexion.getInstancia().CrearConexion();
                 query = "select * from VistaVencimientosHoy;";
                 MySqlCommand comando = new MySqlCommand(query, sqlCon);
                 comando.CommandType = CommandType.Text;
                 sqlCon.Open();
+
                 MySqlDataReader reader;
                 reader = comando.ExecuteReader();
 
                 if (reader.HasRows)
                 {
-                    dtVencimientos.Load(reader);
-                    dtgvVencimientos.DataSource = dtVencimientos;
+                    while (reader.Read())
+                    {
+                        int renglon = dtgvVencimientos.Rows.Add();
+                        dtgvVencimientos.Rows[renglon].Cells[0].Value = reader.GetInt32(0).ToString();
+                        dtgvVencimientos.Rows[renglon].Cells[1].Value = reader.IsDBNull(3) ? "Sin carnet" : reader.GetString(3);
+                        dtgvVencimientos.Rows[renglon].Cells[2].Value = reader.GetString(2);
+                        dtgvVencimientos.Rows[renglon].Cells[3].Value = reader.GetString(1);
+                        dtgvVencimientos.Rows[renglon].Cells[4].Value = reader.GetDateTime(4).ToShortDateString();
+                    }
                 }
                 else
                 {
@@ -69,6 +76,11 @@ namespace G5_TPI_ClubDeportivo
                 { sqlCon.Close(); };
             }
         }
+        private void dtgvVencimientos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
     }
 }
 

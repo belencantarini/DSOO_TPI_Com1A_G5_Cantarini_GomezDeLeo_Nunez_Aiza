@@ -59,6 +59,13 @@ namespace G5_TPI_ClubDeportivo
             ListaVencimientos.Show(); // llama al formulario 
             this.Hide();
         }
+
+        private void btnSocios_Click(object sender, EventArgs e)
+        {
+            FormPlanesyActividades ListaPrecios = new FormPlanesyActividades();
+            ListaPrecios.Show(); // llama al formulario 
+            this.Hide();
+        }
     }
 }
 
