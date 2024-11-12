@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("G5_TPI_ClubDeportivo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c0bd499e9749f440a5a45adfee9c70056458372a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7f9873767da63678405c80276f7620e002f84adf")]
 [assembly: System.Reflection.AssemblyProductAttribute("Cardiology.SonoPAC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("G5_TPI_ClubDeportivo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

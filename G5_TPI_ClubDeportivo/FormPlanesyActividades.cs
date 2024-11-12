@@ -22,8 +22,8 @@ namespace G5_TPI_ClubDeportivo
 
         private void btnVolver_Click_1(object sender, EventArgs e)
         {
-            FormPlanesyActividades Precios = new FormPlanesyActividades();
-            Precios.Show(); // llama al formulario 
+            FormPrincipal Principal = new FormPrincipal();
+            Principal.Show(); // llama al formulario 
             this.Close();
         }
 
