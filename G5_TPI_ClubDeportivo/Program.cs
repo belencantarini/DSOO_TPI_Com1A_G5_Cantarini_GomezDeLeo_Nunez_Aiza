@@ -14,6 +14,7 @@ namespace G5_TPI_ClubDeportivo
             Application.Run(new FormLogin());
             //Application.Run(new FormVencimientos());
             //Application.Run(new FormPlanesyActividades());
+            //Application.Run(new FormPago());
         }
     }
 }

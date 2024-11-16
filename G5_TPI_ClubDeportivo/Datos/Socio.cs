@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace G5_TPI_ClubDeportivo.Datos
 {
-    internal class Socio
+    internal class Socio : Cliente
     {
 
         public string Nuevo_Socio(Entidades.E_Socio socio)
@@ -56,6 +56,56 @@ namespace G5_TPI_ClubDeportivo.Datos
 
 
 
+        public override int RegistrarPago(Entidades.E_Pago pago)
+        {
+            int salidarespuestaPago = 0;
+            MySqlConnection sqlCon = new MySqlConnection();
+            try
+            {
+                sqlCon = Conexion.getInstancia().CrearConexion();
+
+                // Llamamos al procedimiento almacenado
+                MySqlCommand comandoPago = new MySqlCommand("registrarPago", sqlCon);
+                comandoPago.CommandType = CommandType.StoredProcedure;
+
+                // Parámetros de entrada
+                comandoPago.Parameters.Add("VarClienteID", MySqlDbType.Int32).Value = pago.ClienteID;
+                comandoPago.Parameters.Add("EsSocio", MySqlDbType.Bit).Value = true;
+                comandoPago.Parameters.Add("VarMembresiaID", MySqlDbType.Int32).Value = pago.MembresiaID;
+                comandoPago.Parameters.Add("VarActividadID", MySqlDbType.Int32).Value = null;
+                comandoPago.Parameters.Add("VarMetodoPago", MySqlDbType.VarChar).Value = pago.MetodoPago;
+                comandoPago.Parameters.Add("VarCuotas", MySqlDbType.Int32).Value = pago.Cuotas;
+
+                // Parámetros de salida
+                MySqlParameter ParRespuestaPago = new MySqlParameter();
+                ParRespuestaPago.ParameterName = "@Respuesta";
+                ParRespuestaPago.MySqlDbType = MySqlDbType.Int32;
+                ParRespuestaPago.Direction = ParameterDirection.Output;
+                comandoPago.Parameters.Add(ParRespuestaPago);
+
+                // Ejecutamos el procedimiento
+                sqlCon.Open();
+                comandoPago.ExecuteNonQuery();
+
+                salidarespuestaPago = Convert.ToInt32(ParRespuestaPago.Value);
+
+                return salidarespuestaPago;
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}", "MENSAJE DEL SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return salidarespuestaPago;
+            }
+
+            finally
+            {
+                if (sqlCon.State == ConnectionState.Open)
+                {
+                    sqlCon.Close();
+                }
+            }
+        }
 
 
 

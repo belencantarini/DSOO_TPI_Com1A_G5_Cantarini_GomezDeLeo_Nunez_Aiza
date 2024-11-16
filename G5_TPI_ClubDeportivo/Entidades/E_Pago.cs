@@ -10,6 +10,7 @@ namespace G5_TPI_ClubDeportivo.Entidades
     {
         public int PagoID { get; set; }
         public int ClienteID { get; set; }
+        public bool EsSocio {  get; set; }
         public int MembresiaID { get; set; }
         public int ActividadID { get; set; }
         public double Monto { get; set; }

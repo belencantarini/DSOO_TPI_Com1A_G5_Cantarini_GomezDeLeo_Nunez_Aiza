@@ -11,7 +11,7 @@ namespace G5_TPI_ClubDeportivo.Entidades
     {
         public int SocioID { get; set; }
         public string CarnetSocioID { get; set; }
-        public string Estado { get; set; }
+        public bool Activo { get; set; }
         public DateTime FechaVencimientoCuota { get; set; }
     }
 

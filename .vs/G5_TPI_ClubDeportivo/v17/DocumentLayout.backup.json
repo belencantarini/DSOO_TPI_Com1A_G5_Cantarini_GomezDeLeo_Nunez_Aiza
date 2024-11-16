@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AC2B3662-85F2-4046-8B05-30AC9EAD5852}|G5_TPI_ClubDeportivo\\G5_TPI_ClubDeportivo.csproj|c:\\users\\belen\\source\\repos\\dsoo_tpi_g5_cantarini_gomezdeleo_nunez_aiza\\g5_tpi_clubdeportivo\\formplanesyactividades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC2B3662-85F2-4046-8B05-30AC9EAD5852}|G5_TPI_ClubDeportivo\\G5_TPI_ClubDeportivo.csproj|solutionrelative:g5_tpi_clubdeportivo\\formplanesyactividades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AC2B3662-85F2-4046-8B05-30AC9EAD5852}|G5_TPI_ClubDeportivo\\G5_TPI_ClubDeportivo.csproj|c:\\users\\belen\\source\\repos\\dsoo_tpi_g5_cantarini_gomezdeleo_nunez_aiza\\g5_tpi_clubdeportivo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC2B3662-85F2-4046-8B05-30AC9EAD5852}|G5_TPI_ClubDeportivo\\G5_TPI_ClubDeportivo.csproj|solutionrelative:g5_tpi_clubdeportivo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC2B3662-85F2-4046-8B05-30AC9EAD5852}|G5_TPI_ClubDeportivo\\G5_TPI_ClubDeportivo.csproj|c:\\users\\belen\\source\\repos\\dsoo_tpi_g5_cantarini_gomezdeleo_nunez_aiza\\g5_tpi_clubdeportivo\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC2B3662-85F2-4046-8B05-30AC9EAD5852}|G5_TPI_ClubDeportivo\\G5_TPI_ClubDeportivo.csproj|solutionrelative:g5_tpi_clubdeportivo\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC2B3662-85F2-4046-8B05-30AC9EAD5852}|G5_TPI_ClubDeportivo\\G5_TPI_ClubDeportivo.csproj|c:\\users\\belen\\source\\repos\\dsoo_tpi_g5_cantarini_gomezdeleo_nunez_aiza\\g5_tpi_clubdeportivo\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AC2B3662-85F2-4046-8B05-30AC9EAD5852}|G5_TPI_ClubDeportivo\\G5_TPI_ClubDeportivo.csproj|solutionrelative:g5_tpi_clubdeportivo\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC2B3662-85F2-4046-8B05-30AC9EAD5852}|G5_TPI_ClubDeportivo\\G5_TPI_ClubDeportivo.csproj|c:\\users\\belen\\source\\repos\\dsoo_tpi_g5_cantarini_gomezdeleo_nunez_aiza\\g5_tpi_clubdeportivo\\formpago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC2B3662-85F2-4046-8B05-30AC9EAD5852}|G5_TPI_ClubDeportivo\\G5_TPI_ClubDeportivo.csproj|solutionrelative:g5_tpi_clubdeportivo\\formpago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AC2B3662-85F2-4046-8B05-30AC9EAD5852}|G5_TPI_ClubDeportivo\\G5_TPI_ClubDeportivo.csproj|c:\\users\\belen\\source\\repos\\dsoo_tpi_g5_cantarini_gomezdeleo_nunez_aiza\\g5_tpi_clubdeportivo\\formlistaclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,32 +27,40 @@
       "RelativeMoniker": "D:0:0:{AC2B3662-85F2-4046-8B05-30AC9EAD5852}|G5_TPI_ClubDeportivo\\G5_TPI_ClubDeportivo.csproj|solutionrelative:g5_tpi_clubdeportivo\\formlistaclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC2B3662-85F2-4046-8B05-30AC9EAD5852}|G5_TPI_ClubDeportivo\\G5_TPI_ClubDeportivo.csproj|C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\g5_tpi_clubdeportivo\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AC2B3662-85F2-4046-8B05-30AC9EAD5852}|G5_TPI_ClubDeportivo\\G5_TPI_ClubDeportivo.csproj|solutionrelative:g5_tpi_clubdeportivo\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{AC2B3662-85F2-4046-8B05-30AC9EAD5852}|G5_TPI_ClubDeportivo\\G5_TPI_ClubDeportivo.csproj|c:\\users\\belen\\source\\repos\\dsoo_tpi_g5_cantarini_gomezdeleo_nunez_aiza\\g5_tpi_clubdeportivo\\formpago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AC2B3662-85F2-4046-8B05-30AC9EAD5852}|G5_TPI_ClubDeportivo\\G5_TPI_ClubDeportivo.csproj|solutionrelative:g5_tpi_clubdeportivo\\formpago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC2B3662-85F2-4046-8B05-30AC9EAD5852}|G5_TPI_ClubDeportivo\\G5_TPI_ClubDeportivo.csproj|c:\\users\\belen\\source\\repos\\dsoo_tpi_g5_cantarini_gomezdeleo_nunez_aiza\\g5_tpi_clubdeportivo\\formplanesyactividades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AC2B3662-85F2-4046-8B05-30AC9EAD5852}|G5_TPI_ClubDeportivo\\G5_TPI_ClubDeportivo.csproj|solutionrelative:g5_tpi_clubdeportivo\\formplanesyactividades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{AC2B3662-85F2-4046-8B05-30AC9EAD5852}|G5_TPI_ClubDeportivo\\G5_TPI_ClubDeportivo.csproj|c:\\users\\belen\\source\\repos\\dsoo_tpi_g5_cantarini_gomezdeleo_nunez_aiza\\g5_tpi_clubdeportivo\\datos\\pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC2B3662-85F2-4046-8B05-30AC9EAD5852}|G5_TPI_ClubDeportivo\\G5_TPI_ClubDeportivo.csproj|solutionrelative:g5_tpi_clubdeportivo\\datos\\pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC2B3662-85F2-4046-8B05-30AC9EAD5852}|G5_TPI_ClubDeportivo\\G5_TPI_ClubDeportivo.csproj|c:\\users\\belen\\source\\repos\\dsoo_tpi_g5_cantarini_gomezdeleo_nunez_aiza\\g5_tpi_clubdeportivo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC2B3662-85F2-4046-8B05-30AC9EAD5852}|G5_TPI_ClubDeportivo\\G5_TPI_ClubDeportivo.csproj|solutionrelative:g5_tpi_clubdeportivo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AC2B3662-85F2-4046-8B05-30AC9EAD5852}|G5_TPI_ClubDeportivo\\G5_TPI_ClubDeportivo.csproj|c:\\users\\belen\\source\\repos\\dsoo_tpi_g5_cantarini_gomezdeleo_nunez_aiza\\g5_tpi_clubdeportivo\\datos\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC2B3662-85F2-4046-8B05-30AC9EAD5852}|G5_TPI_ClubDeportivo\\G5_TPI_ClubDeportivo.csproj|solutionrelative:g5_tpi_clubdeportivo\\datos\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\G5_TPI_ClubDeportivo\\Datos\\Pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:G5_TPI_ClubDeportivo\\Datos\\Pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC2B3662-85F2-4046-8B05-30AC9EAD5852}|G5_TPI_ClubDeportivo\\G5_TPI_ClubDeportivo.csproj|c:\\users\\belen\\source\\repos\\dsoo_tpi_g5_cantarini_gomezdeleo_nunez_aiza\\g5_tpi_clubdeportivo\\datos\\socio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC2B3662-85F2-4046-8B05-30AC9EAD5852}|G5_TPI_ClubDeportivo\\G5_TPI_ClubDeportivo.csproj|solutionrelative:g5_tpi_clubdeportivo\\datos\\socio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AC2B3662-85F2-4046-8B05-30AC9EAD5852}|G5_TPI_ClubDeportivo\\G5_TPI_ClubDeportivo.csproj|c:\\users\\belen\\source\\repos\\dsoo_tpi_g5_cantarini_gomezdeleo_nunez_aiza\\g5_tpi_clubdeportivo\\entidades\\e_pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC2B3662-85F2-4046-8B05-30AC9EAD5852}|G5_TPI_ClubDeportivo\\G5_TPI_ClubDeportivo.csproj|solutionrelative:g5_tpi_clubdeportivo\\entidades\\e_pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AC2B3662-85F2-4046-8B05-30AC9EAD5852}|G5_TPI_ClubDeportivo\\G5_TPI_ClubDeportivo.csproj|c:\\users\\belen\\source\\repos\\dsoo_tpi_g5_cantarini_gomezdeleo_nunez_aiza\\g5_tpi_clubdeportivo\\datos\\nosocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC2B3662-85F2-4046-8B05-30AC9EAD5852}|G5_TPI_ClubDeportivo\\G5_TPI_ClubDeportivo.csproj|solutionrelative:g5_tpi_clubdeportivo\\datos\\nosocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\G5_TPI_ClubDeportivo\\Entidades\\E_Pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:G5_TPI_ClubDeportivo\\Entidades\\E_Pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AC2B3662-85F2-4046-8B05-30AC9EAD5852}|G5_TPI_ClubDeportivo\\G5_TPI_ClubDeportivo.csproj|c:\\users\\belen\\source\\repos\\dsoo_tpi_g5_cantarini_gomezdeleo_nunez_aiza\\g5_tpi_clubdeportivo\\datos\\socio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC2B3662-85F2-4046-8B05-30AC9EAD5852}|G5_TPI_ClubDeportivo\\G5_TPI_ClubDeportivo.csproj|solutionrelative:g5_tpi_clubdeportivo\\datos\\socio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC2B3662-85F2-4046-8B05-30AC9EAD5852}|G5_TPI_ClubDeportivo\\G5_TPI_ClubDeportivo.csproj|c:\\users\\belen\\source\\repos\\dsoo_tpi_g5_cantarini_gomezdeleo_nunez_aiza\\g5_tpi_clubdeportivo\\datos\\actividad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC2B3662-85F2-4046-8B05-30AC9EAD5852}|G5_TPI_ClubDeportivo\\G5_TPI_ClubDeportivo.csproj|solutionrelative:g5_tpi_clubdeportivo\\datos\\actividad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC2B3662-85F2-4046-8B05-30AC9EAD5852}|G5_TPI_ClubDeportivo\\G5_TPI_ClubDeportivo.csproj|c:\\users\\belen\\source\\repos\\dsoo_tpi_g5_cantarini_gomezdeleo_nunez_aiza\\g5_tpi_clubdeportivo\\forminscripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AC2B3662-85F2-4046-8B05-30AC9EAD5852}|G5_TPI_ClubDeportivo\\G5_TPI_ClubDeportivo.csproj|solutionrelative:g5_tpi_clubdeportivo\\forminscripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC2B3662-85F2-4046-8B05-30AC9EAD5852}|G5_TPI_ClubDeportivo\\G5_TPI_ClubDeportivo.csproj|c:\\users\\belen\\source\\repos\\dsoo_tpi_g5_cantarini_gomezdeleo_nunez_aiza\\g5_tpi_clubdeportivo\\forminscripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC2B3662-85F2-4046-8B05-30AC9EAD5852}|G5_TPI_ClubDeportivo\\G5_TPI_ClubDeportivo.csproj|solutionrelative:g5_tpi_clubdeportivo\\forminscripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,69 +70,97 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FormListaClientes.cs",
-              "DocumentMoniker": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\G5_TPI_ClubDeportivo\\FormListaClientes.cs",
-              "RelativeDocumentMoniker": "G5_TPI_ClubDeportivo\\FormListaClientes.cs",
-              "ToolTip": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\G5_TPI_ClubDeportivo\\FormListaClientes.cs",
-              "RelativeToolTip": "G5_TPI_ClubDeportivo\\FormListaClientes.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAArwBgAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "FormPago.cs",
+              "DocumentMoniker": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\G5_TPI_ClubDeportivo\\FormPago.cs",
+              "RelativeDocumentMoniker": "G5_TPI_ClubDeportivo\\FormPago.cs",
+              "ToolTip": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\G5_TPI_ClubDeportivo\\FormPago.cs",
+              "RelativeToolTip": "G5_TPI_ClubDeportivo\\FormPago.cs",
+              "ViewState": "AgIAADEBAAAAAAAAAAD4v0IBAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T11:26:23.438Z",
+              "WhenOpened": "2024-11-15T21:37:17.396Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\G5_TPI_ClubDeportivo\\Program.cs",
+              "RelativeDocumentMoniker": "G5_TPI_ClubDeportivo\\Program.cs",
+              "ToolTip": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\G5_TPI_ClubDeportivo\\Program.cs",
+              "RelativeToolTip": "G5_TPI_ClubDeportivo\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T23:58:06.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormPrincipal.cs",
+              "DocumentMoniker": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\G5_TPI_ClubDeportivo\\FormPrincipal.cs",
+              "RelativeDocumentMoniker": "G5_TPI_ClubDeportivo\\FormPrincipal.cs",
+              "ToolTip": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\G5_TPI_ClubDeportivo\\FormPrincipal.cs",
+              "RelativeToolTip": "G5_TPI_ClubDeportivo\\FormPrincipal.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAIAywCsAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T23:57:19.94Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "FormPrincipal.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\G5_TPI_ClubDeportivo\\FormPrincipal.cs",
+              "RelativeDocumentMoniker": "G5_TPI_ClubDeportivo\\FormPrincipal.cs",
+              "ToolTip": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\G5_TPI_ClubDeportivo\\FormPrincipal.cs [Dise\u00F1o]",
+              "RelativeToolTip": "G5_TPI_ClubDeportivo\\FormPrincipal.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T23:57:14.83Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormListaClientes.cs",
+              "DocumentMoniker": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\G5_TPI_ClubDeportivo\\FormListaClientes.cs",
+              "RelativeDocumentMoniker": "G5_TPI_ClubDeportivo\\FormListaClientes.cs",
+              "ToolTip": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\G5_TPI_ClubDeportivo\\FormListaClientes.cs",
+              "RelativeToolTip": "G5_TPI_ClubDeportivo\\FormListaClientes.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAtwBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T23:37:16.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "FormListaClientes.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\G5_TPI_ClubDeportivo\\FormListaClientes.cs",
               "RelativeDocumentMoniker": "G5_TPI_ClubDeportivo\\FormListaClientes.cs",
               "ToolTip": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\G5_TPI_ClubDeportivo\\FormListaClientes.cs [Dise\u00F1o]",
               "RelativeToolTip": "G5_TPI_ClubDeportivo\\FormListaClientes.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T11:26:21.532Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FormPlanesyActividades.cs",
-              "DocumentMoniker": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\G5_TPI_ClubDeportivo\\FormPlanesyActividades.cs",
-              "RelativeDocumentMoniker": "G5_TPI_ClubDeportivo\\FormPlanesyActividades.cs",
-              "ToolTip": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\G5_TPI_ClubDeportivo\\FormPlanesyActividades.cs",
-              "RelativeToolTip": "G5_TPI_ClubDeportivo\\FormPlanesyActividades.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAewBoAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T11:25:46.437Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FormPlanesyActividades.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\G5_TPI_ClubDeportivo\\FormPlanesyActividades.cs",
-              "RelativeDocumentMoniker": "G5_TPI_ClubDeportivo\\FormPlanesyActividades.cs",
-              "ToolTip": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\G5_TPI_ClubDeportivo\\FormPlanesyActividades.cs [Dise\u00F1o]",
-              "RelativeToolTip": "G5_TPI_ClubDeportivo\\FormPlanesyActividades.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T11:25:27.831Z",
+              "WhenOpened": "2024-11-15T23:37:07.381Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Socio.cs",
-              "DocumentMoniker": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\G5_TPI_ClubDeportivo\\Datos\\Socio.cs",
-              "RelativeDocumentMoniker": "G5_TPI_ClubDeportivo\\Datos\\Socio.cs",
-              "ToolTip": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\G5_TPI_ClubDeportivo\\Datos\\Socio.cs",
-              "RelativeToolTip": "G5_TPI_ClubDeportivo\\Datos\\Socio.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Pago.cs",
+              "DocumentMoniker": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\G5_TPI_ClubDeportivo\\Datos\\Pago.cs",
+              "RelativeDocumentMoniker": "G5_TPI_ClubDeportivo\\Datos\\Pago.cs",
+              "ToolTip": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\G5_TPI_ClubDeportivo\\Datos\\Pago.cs",
+              "RelativeToolTip": "G5_TPI_ClubDeportivo\\Datos\\Pago.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA0wBoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T22:48:26.582Z"
+              "WhenOpened": "2024-11-15T23:35:05.099Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -122,58 +170,98 @@
               "RelativeDocumentMoniker": "G5_TPI_ClubDeportivo\\Entidades\\E_Pago.cs",
               "ToolTip": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\G5_TPI_ClubDeportivo\\Entidades\\E_Pago.cs",
               "RelativeToolTip": "G5_TPI_ClubDeportivo\\Entidades\\E_Pago.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T22:39:18.398Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Pago.cs",
-              "DocumentMoniker": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\G5_TPI_ClubDeportivo\\Datos\\Pago.cs",
-              "RelativeDocumentMoniker": "G5_TPI_ClubDeportivo\\Datos\\Pago.cs",
-              "ToolTip": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\G5_TPI_ClubDeportivo\\Datos\\Pago.cs",
-              "RelativeToolTip": "G5_TPI_ClubDeportivo\\Datos\\Pago.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T22:38:08.386Z",
+              "WhenOpened": "2024-11-15T22:40:11.835Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
+              "Title": "FormInscripcion.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\G5_TPI_ClubDeportivo\\FormInscripcion.cs",
+              "RelativeDocumentMoniker": "G5_TPI_ClubDeportivo\\FormInscripcion.cs",
+              "ToolTip": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\G5_TPI_ClubDeportivo\\FormInscripcion.cs [Dise\u00F1o]",
+              "RelativeToolTip": "G5_TPI_ClubDeportivo\\FormInscripcion.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T21:57:14.388Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FormPago.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\G5_TPI_ClubDeportivo\\FormPago.cs",
+              "RelativeDocumentMoniker": "G5_TPI_ClubDeportivo\\FormPago.cs",
+              "ToolTip": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\G5_TPI_ClubDeportivo\\FormPago.cs [Dise\u00F1o]",
+              "RelativeToolTip": "G5_TPI_ClubDeportivo\\FormPago.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T21:37:07.337Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "NoSocio.cs",
               "DocumentMoniker": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\G5_TPI_ClubDeportivo\\Datos\\NoSocio.cs",
               "RelativeDocumentMoniker": "G5_TPI_ClubDeportivo\\Datos\\NoSocio.cs",
               "ToolTip": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\G5_TPI_ClubDeportivo\\Datos\\NoSocio.cs",
               "RelativeToolTip": "G5_TPI_ClubDeportivo\\Datos\\NoSocio.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAAAYwEoAAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T22:38:17.569Z"
+              "WhenOpened": "2024-11-15T21:34:34.964Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FormPrincipal.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\G5_TPI_ClubDeportivo\\FormPrincipal.cs",
-              "RelativeDocumentMoniker": "G5_TPI_ClubDeportivo\\FormPrincipal.cs",
-              "ToolTip": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\G5_TPI_ClubDeportivo\\FormPrincipal.cs [Dise\u00F1o]",
-              "RelativeToolTip": "G5_TPI_ClubDeportivo\\FormPrincipal.cs [Dise\u00F1o]",
+              "DocumentIndex": 11,
+              "Title": "Socio.cs",
+              "DocumentMoniker": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\G5_TPI_ClubDeportivo\\Datos\\Socio.cs",
+              "RelativeDocumentMoniker": "G5_TPI_ClubDeportivo\\Datos\\Socio.cs",
+              "ToolTip": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\G5_TPI_ClubDeportivo\\Datos\\Socio.cs",
+              "RelativeToolTip": "G5_TPI_ClubDeportivo\\Datos\\Socio.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAQwEwAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T21:55:32.901Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-11-15T21:17:15.813Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\G5_TPI_ClubDeportivo\\Program.cs",
-              "RelativeDocumentMoniker": "G5_TPI_ClubDeportivo\\Program.cs",
-              "ToolTip": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\G5_TPI_ClubDeportivo\\Program.cs",
-              "RelativeToolTip": "G5_TPI_ClubDeportivo\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAOAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\G5_TPI_ClubDeportivo\\Datos\\Cliente.cs",
+              "RelativeDocumentMoniker": "G5_TPI_ClubDeportivo\\Datos\\Cliente.cs",
+              "ToolTip": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\G5_TPI_ClubDeportivo\\Datos\\Cliente.cs",
+              "RelativeToolTip": "G5_TPI_ClubDeportivo\\Datos\\Cliente.cs",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAYwF0AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T21:14:47.28Z",
+              "WhenOpened": "2024-11-15T09:26:38.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Actividad.cs",
+              "DocumentMoniker": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\G5_TPI_ClubDeportivo\\Datos\\Actividad.cs",
+              "RelativeDocumentMoniker": "G5_TPI_ClubDeportivo\\Datos\\Actividad.cs",
+              "ToolTip": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\G5_TPI_ClubDeportivo\\Datos\\Actividad.cs",
+              "RelativeToolTip": "G5_TPI_ClubDeportivo\\Datos\\Actividad.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T22:57:45.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FormInscripcion.cs",
+              "DocumentMoniker": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\G5_TPI_ClubDeportivo\\FormInscripcion.cs",
+              "RelativeDocumentMoniker": "G5_TPI_ClubDeportivo\\FormInscripcion.cs",
+              "ToolTip": "C:\\Users\\Belen\\source\\repos\\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\\G5_TPI_ClubDeportivo\\FormInscripcion.cs",
+              "RelativeToolTip": "G5_TPI_ClubDeportivo\\FormInscripcion.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAgwHQAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T21:57:17.779Z",
               "EditorCaption": ""
             }
           ]

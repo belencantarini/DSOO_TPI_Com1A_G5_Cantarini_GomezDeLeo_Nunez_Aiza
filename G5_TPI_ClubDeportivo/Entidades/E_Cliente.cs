@@ -17,5 +17,7 @@ namespace G5_TPI_ClubDeportivo.Entidades
         public DateTime FechaNacimiento { get; set; }
         public DateTime FechaInscripcion { get; set; }
         public bool AptoFisico { get; set; }
+        public int Edad { get; set; }
+        public string? TipoCliente { get; set; }
     }
 }

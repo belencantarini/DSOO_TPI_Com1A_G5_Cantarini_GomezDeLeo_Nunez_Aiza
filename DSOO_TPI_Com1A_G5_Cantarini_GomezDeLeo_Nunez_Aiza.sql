@@ -60,9 +60,18 @@ Precio double not null,
 constraint pk_actividad_id primary key (ActividadID)
 )engine=innodb;
 
+create table PlanMembresia(
+MembresiaID int auto_increment not null,
+Plan varchar (30) not null,
+Meses int not null,
+Precio double not null,
+constraint pk_membresia_id primary key (MembresiaID)
+)engine=innodb;
+
 create table Pago(
 PagoID int auto_increment not null,
 ClienteID int not null,
+MembresiaID int null,
 ActividadID int null,
 Monto double not null,
 MetodoPago varchar (30) not null,
@@ -70,6 +79,7 @@ Cuotas int not null default 1,
 FechaPago date not null,
 constraint pk_pago_id primary key (PagoID),
 constraint fk_pago_cliente foreign key (ClienteID) references Cliente(ClienteID),
+constraint fk_inscripcion_membresia foreign key (MembresiaID) references PlanMembresia(MembresiaID),
 constraint fk_inscripcion_actividad foreign key (ActividadID) references Actividad(ActividadID)
 )engine=innodb;
 
@@ -91,7 +101,11 @@ insert into Actividad (Nombre, Precio) values
 ('Musculacion', 1500.00),
 ('Tenis', 2000.00);
 
-
+insert into PlanMembresia (Plan,Meses,Precio) values 
+('Mensual', 1,30000.00),
+('Trimestral',3,80000.00),
+('Semestral',6,150000.00),
+('Anual', 12,290000.00);
 /* **************************************************************************************************************************** */
 -- Procedimientos almacenados
 /* **************************************************************************************************************************** */
@@ -117,53 +131,6 @@ delimiter ;
 -- Para llamar a mi procedimiento almacenado para el Ingreso LOGIN
 -- call ingresoLogin('Administrador','adm123');
 -- call ingresoLogin('NoExiste','NoExiste');
-
-
-/* **************************************************************************************************************************** */
-
--- Procedimiento Nuevo Cliente
-
--- Cambio el delimitador para poder crear el procedimiendo
-delimiter // 
-
--- Elimino el procedimiento si es que existe
-drop procedure if exists DSOO_C1A_G5_TPI_Cantarini_GomezDeLeo_Nunez_Aiza.nuevoCliente //
-
--- Creo el procedimiento almacenado que requiere de los parametros de Entrada con los datos del nuevo cliente para ejecutar su logica 
--- y tiene una Respuesta como Salida, donde verifico si el cliente ya estaba registrado. 
-create procedure nuevoCliente(
-	in Nombre varchar(30),
-    in Apellido varchar(30),
-    in TipoDocumento varchar(15), 
-    in NumeroDocumento int, 
-    in FechaNacimiento date, 
-    in AptoFisico bool, 
-    out Respuesta int
-    )
-begin
-	-- Declaro mis variables
-	declare existeCliente int default 0;
-    declare FechaInscripcion date default current_date;
-    
-    -- Verifico si el cliente ya existe en mi base de datos
-    set existeCliente = (select count(*) from Cliente C WHERE C.TipoDocumento = TipoDocumento and C.NumeroDocumento = NumeroDocumento);				
-	
-    -- Si el cliente no esta registrado, ingreso sus datos en la tabla cliente
-	if existeCliente = 0 then	 
-		insert into Cliente(Nombre, Apellido, TipoDocumento, NumeroDocumento, FechaNacimiento, FechaInscripcion, AptoFisico) values(Nombre, Apellido, TipoDocumento, NumeroDocumento, FechaNacimiento, FechaInscripcion, AptoFisico);
-        set respuesta = (select C.ClienteID from Cliente C WHERE C.TipoDocumento = TipoDocumento and C.NumeroDocumento = NumeroDocumento); 
-	  else
-		set respuesta = 0; -- Cliente ya registrado
-      end if;	
-end //
-delimiter ;
-
--- Para llamar a mi procedimiento almacenado para el Nuevo Cliente
--- SET @Respuesta = NULL;
--- call nuevoCliente('Belen','Cantarini','DNI',31977726,'1985-12-12', @Respuesta);
--- SELECT @Respuesta;
--- call nuevoCliente('Carlos', 'Pérez', 'DNI', 12345678, '1990-05-15', @Respuesta);
--- SELECT @Respuesta;
 
 
 /* **************************************************************************************************************************** */
@@ -231,7 +198,167 @@ begin
 end //
 delimiter ;
 
+/* **************************************************************************************************************************** */
+-- Procedimiento obtener datos Cliente
 
+-- Cambio el delimitador para poder crear el procedimiendo
+delimiter //
+
+drop procedure if exists DSOO_C1A_G5_TPI_Cantarini_GomezDeLeo_Nunez_Aiza.obtenerDatosCliente //
+
+create procedure obtenerDatosCliente(
+    in TipoDocumento varchar(15), 
+    in NumeroDocumento int, 
+	out ExisteCliente int,
+	out VarClienteID int,
+    out VarTipoCliente varchar (15),
+	out VarApellido varchar (30),
+	out VarNombre varchar (30),
+	out VarFechaNacimiento date,
+    out VarEdad int,
+	out FechaInscripcion date,
+	out VarAptoFisico bool,
+	out VarCarnetSocioID varchar(30),
+	out VarFechaVencimientoCuota date,
+	out VarActivo boolean
+)
+begin
+    -- Inicializo valores por defecto
+    set ExisteCliente = 0;
+
+	-- Verifico si el cliente existe
+    set existeCliente = (select count(*) from Cliente C where C.TipoDocumento = TipoDocumento and C.NumeroDocumento = NumeroDocumento);	 
+    
+    -- Si el cliente existe, obtengo todos sus datos
+    if  existeCliente > 0 then	 
+		select C.ClienteID, 
+			if(S.ClienteID is not null, 'Socio', if(NS.ClienteID is not null, 'No Socio', 'Indeterminado')) as TipoCliente,
+				C.Apellido, C.Nombre, C.FechaNacimiento, 
+					timestampdiff(year, FechaNacimiento, current_date) as Edad, 
+						C.FechaInscripcion, C.AptoFisico, S.CarnetSocioID, S.FechaVencimientoCuota, S.Activo
+							into VarClienteID,VarTipoCliente,VarApellido,VarNombre,VarFechaNacimiento,VarEdad,FechaInscripcion,VarAptoFisico,VarCarnetSocioID,VarFechaVencimientoCuota,VarActivo
+								from Cliente C
+									left join Socio S on C.ClienteID = S.ClienteID
+										left join NoSocio NS ON C.ClienteID = NS.ClienteID
+											where C.TipoDocumento = TipoDocumento and C.NumeroDocumento = NumeroDocumento;
+    end if;	
+end //
+delimiter ;
+
+
+-- in TipoDocumento, NumeroDocumento    
+-- out ExisteCliente,VarClienteID,VarTipoCliente,VarApellido,VarNombre,VarFechaNacimiento,VarEdad,FechaInscripcion,VarAptoFisico,VarCarnetSocioID,VarFechaVencimientoCuota,VarActivo
+-- call obtenerDatosCliente('DNI',12345678,@ExisteCliente,@VarClienteID,@VarTipoCliente,@VarApellido,@VarNombre,@VarFechaNacimiento,@VarEdad,@FechaInscripcion,@VarAptoFisico,@VarCarnetSocioID,@VarFechaVencimientoCuota,@VarActivo);
+-- select @ExisteCliente,@VarClienteID,@VarTipoCliente,@VarApellido,@VarNombre,@VarFechaNacimiento,@VarEdad,@FechaInscripcion,@VarAptoFisico,@VarCarnetSocioID,@VarFechaVencimientoCuota,@VarActivo;
+call obtenerDatosCliente('Pasaporte',45678901,@ExisteCliente,@VarClienteID,@VarTipoCliente,@VarApellido,@VarNombre,@VarFechaNacimiento,@VarEdad,@FechaInscripcion,@VarAptoFisico,@VarCarnetSocioID,@VarFechaVencimientoCuota,@VarActivo);
+select @ExisteCliente,@VarClienteID,@VarTipoCliente,@VarApellido,@VarNombre,@VarFechaNacimiento,@VarEdad,@FechaInscripcion,@VarAptoFisico,@VarCarnetSocioID,@VarFechaVencimientoCuota,@VarActivo;
+
+/* **************************************************************************************************************************** */
+
+-- Procedimiento Nuevo Pago y Emision de Carnet de Socio
+
+-- Cambio el delimitador para poder crear el procedimiendo
+delimiter //
+
+drop procedure if exists DSOO_C1A_G5_TPI_Cantarini_GomezDeLeo_Nunez_Aiza.registrarPago//
+
+create procedure registrarPago(
+    in VarClienteID int,
+    in EsSocio boolean,
+    in VarMembresiaID int,
+    in VarActividadID int,
+    in VarMetodoPago varchar(30),
+    in VarCuotas int,
+    out Respuesta int
+)
+begin
+    declare carnetGenerado varchar(30);
+    declare existeCarnetSocio int default 0;
+    declare planMeses int;
+    declare monto double;
+    declare fechaActual date default current_date;
+	declare nuevaFechaVencimiento date;
+	declare FechaVencimientoCuota date;
+    -- Control de errores SQL
+    declare exit handler for sqlexception
+    begin
+        set Respuesta = -2; -- Error de SQL
+        rollback;
+    end;
+
+    start transaction;
+
+    -- Si el cliente no existe, terminamos
+    if not exists (select 1 from Cliente where ClienteID = VarClienteID) then
+        set Respuesta = -1; -- Cliente no existe
+        rollback;
+    end if;
+	
+
+    -- Si el cliente es un socio
+    if EsSocio then
+		-- Verificamos el plan de membresia del socio
+		set planMeses = (select Meses from PlanMembresia PM where PM.MembresiaID = VarMembresiaID);
+        -- Verificamos el monto a pagar
+        set monto = (select Precio from PlanMembresia PM where PM.MembresiaID = VarMembresiaID);
+        -- Verificamos si ya tiene carnet de socio
+        set existeCarnetSocio = (select count(*) from Socio S where S.ClienteID = VarClienteID and S.CarnetSocioID is not null);
+		-- Verificamos la fecha actual de vencimiento de la cuota
+        set FechaVencimientoCuota = (select S.FechaVencimientoCuota from Socio S where S.ClienteID = VarClienteID);
+        -- Si no tiene carnet, generamos uno
+        if existeCarnetSocio = 0 then
+            set carnetGenerado = concat('CARNET-', VarClienteID);
+            update Socio S
+            set S.CarnetSocioID = carnetGenerado, S.Activo = true, S.FechaVencimientoCuota = date_add(fechaActual, interval planMeses month)
+            where S.ClienteID = VarClienteID;
+		else
+			-- Si ya tiene un carnet, actualizamos su fecha de vencimiento
+			if FechaVencimientoCuota < fechaActual then
+				-- Si la fecha de vencimiento es anterior a la fecha actual, reiniciamos la fecha de vencimiento desde la fecha actual
+				set nuevaFechaVencimiento = DATE_ADD(fechaActual, interval planMeses month);
+			else
+				-- Si la fecha de vencimiento es posterior a la fecha actual, extendemos la fecha de vencimiento actual
+				set nuevaFechaVencimiento = DATE_ADD(FechaVencimientoCuota, interval planMeses month);
+			end if;
+            
+			-- Actualizamos el estado del socio y la nueva fecha de vencimiento calculada
+			update Socio S 
+			set S.Activo = true, S.FechaVencimientoCuota = nuevaFechaVencimiento 
+			where S.ClienteID = VarClienteID;
+        end if;
+
+        -- Registramos el pago de la membresía
+        insert into Pago (ClienteID, MembresiaID, Monto, MetodoPago, Cuotas, FechaPago)
+        values (VarClienteID, VarMembresiaID, Monto, VarMetodoPago, VarCuotas, fechaActual);
+
+        -- Devolvemos el estado de éxito
+        if existeCarnetSocio = 0 then
+			set Respuesta = 2;
+		else
+			set Respuesta = 1;
+		end if;
+
+    else
+        -- Verificamos el monto a pagar
+        set monto = (select Precio from Actividad A where A.ActividadID = VarActividadID);
+        
+        -- registramos el pago de la actividad
+        insert into Pago (ClienteID, ActividadID, Monto, MetodoPago, Cuotas, FechaPago)
+        values (VarClienteID, VarActividadID, Monto, VarMetodoPago, VarCuotas, fechaActual);
+
+        -- Devolvemos el estado de éxito
+        set Respuesta = 1;
+    end if;
+	commit;
+end //
+delimiter ;
+
+ -- in VarClienteID,EsSocio,VarMembresiaID,VarActividadID,VarMetodoPago,VarCuotas,out Respuesta
+ -- call registrarPago(1, true, 2,null,'Tarjeta',3, @Respuesta);
+ -- select @Respuesta;
+select*from pago;
+select*from socio;
+select*from nosocio;
 
 /* **************************************************************************************************************************** */
 -- Eventos programados
@@ -302,7 +429,21 @@ create or replace view VistaCuotasVencidas as
 			inner join Socio S
 				on C.ClienteID = S.ClienteID
 					where S.FechaVencimientoCuota < current_date;
-                    
+select*from pago;
+drop view if exists VistaUltimoRecibo;
+create or replace view VistaUltimoRecibo as
+	select P.ClienteID,C.Apellido, C.Nombre, C.TipoDocumento, C.NumeroDocumento,P.PagoID,P.MembresiaID,M.Plan as Membresia,P.ActividadID,A.Nombre as Actividad,P.Monto, P.MetodoPago, P.Cuotas, P.FechaPago
+		from Pago P
+			left join Cliente C
+				on C.ClienteID = P.ClienteID
+					left join PlanMembresia M
+						on M.MembresiaID = P.MembresiaID
+							left join Actividad A
+								on A.ActividadID = P.ActividadID
+									where P.PagoID = (select MAX(PagoID) from Pago);
+                                
+select * from VistaUltimoRecibo;
+select * from pago;                              
 -- select * from DSOO_C1A_G5_TPI_Cantarini_GomezDeLeo_Nunez_Aiza.ListaSocios;
 -- select * from DSOO_C1A_G5_TPI_Cantarini_GomezDeLeo_Nunez_Aiza.ListaNoSocios;
 -- select * from DSOO_C1A_G5_TPI_Cantarini_GomezDeLeo_Nunez_Aiza.ListaClientes;
@@ -317,33 +458,19 @@ create or replace view VistaCuotasVencidas as
 insert into Cliente (Nombre, Apellido, TipoDocumento, NumeroDocumento, FechaNacimiento, FechaInscripcion, AptoFisico) values 
 ('Carlos', 'Pérez', 'DNI', 12345678, '1990-05-15', '2024-10-01', TRUE),
 ('Lucía', 'Gómez', 'DNI', 87654321, '1985-11-10', '2024-09-28', TRUE),
-('Mariano', 'López', 'Pasaporte', 45678901, '1992-08-22', '2024-10-05', FALSE),
-('Ana', 'Rodríguez', 'DNI', 22334455, '2000-02-12', '2024-10-10', TRUE),
-('Juan', 'Pérez', 'DNI', 11223344, '1985-05-15', '2024-10-01', TRUE),
-('María', 'Fernández', 'DNI', 33445566, '1992-12-20', '2024-09-30', TRUE),
-('Esteban', 'Mendoza', 'Pasaporte', 77889900, '1980-03-15', '2024-10-05', TRUE),
-('Sofía', 'Castro', 'DNI', 55667788, '1995-07-01', '2024-10-15', FALSE);
+('Sofía', 'Castro', 'DNI', 11111111, '1995-07-01', '2024-10-15', FALSE);
 
 insert into Socio (CarnetSocioID, ClienteID, FechaVencimientoCuota, Activo) values 
-('SOCIO123', 1, '2024-10-16', TRUE),
-('SOCIO124', 2, '2024-10-16', TRUE),
-('SOCIO125', 4, '2024-11-10', TRUE),
-('SOCIO126', 5, '2024-11-15', TRUE),  
-('SOCIO127', 6, '2024-10-16', TRUE),
-('SOCIO128', 7, '2024-09-01', FALSE), 
-('SOCIO129', 8, '2024-10-10', FALSE);
+('SOCIO123', 1, '2024-11-16', TRUE),
+('SOCIO124', 2, '2024-10-16', FALSE);
 
 insert into NoSocio (ClienteID) values (3);
 
 call ingresoLogin('AdministradorPrueba','adm123');
 call ingresoLogin('NoExiste','NoExiste');
 SET @Respuesta = NULL;
-
-call nuevoCliente('Belen','Cantarini','DNI',31977726,'1985-12-12',true, @Respuesta);
+call nuevoSocio('Damian', 'Gomez', 'DNI', 22222222, '1990-05-15',true, @Respuesta);
 SELECT @Respuesta;
-call nuevoCliente('Emanuel', 'Pérez', 'DNI', 38345, '1990-05-15',false, @Respuesta);
-SELECT @Respuesta;
-select * from Cliente;
 
 
 /* **************************************************************************************************************************** */
@@ -352,6 +479,7 @@ select * from Cliente;
 select * from Roles;
 select * from Usuario;
 select * from Actividad;
+select * from PlanMembresia;
 select * from Cliente;
 select * from Socio;
 select * from NoSocio;
@@ -363,5 +491,3 @@ select * from VistaVencimientosCuotas;
 select * from VistaVencimientosHoy;
 select * from VistaCuotasVencidas;
 show events like 'ActualizarEstadoSocios';
-call nuevoSocio('Damian', 'Gomez', 'DNI', 65756757, '1990-05-15',true, @Respuesta);
-SELECT @Respuesta;

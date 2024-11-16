@@ -43,7 +43,9 @@ namespace G5_TPI_ClubDeportivo
 
         private void btnPagos_Click(object sender, EventArgs e)
         {
-
+            FormPago FormPago = new FormPago();
+            FormPago.Show(); // llama al formulario 
+            this.Close();
         }
 
         private void btnListaSociosNoSocios_Click(object sender, EventArgs e)
