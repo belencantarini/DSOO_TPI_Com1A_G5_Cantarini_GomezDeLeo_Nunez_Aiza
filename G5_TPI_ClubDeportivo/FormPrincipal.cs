@@ -68,6 +68,13 @@ namespace G5_TPI_ClubDeportivo
             ListaPrecios.Show(); // llama al formulario 
             this.Hide();
         }
+
+        private void btnCarnet_Click(object sender, EventArgs e)
+        {
+            FormBuscarSocio BuscarSocio = new FormBuscarSocio();
+            BuscarSocio.Show(); // llama al formulario 
+            this.Hide();
+        }
     }
 }
 

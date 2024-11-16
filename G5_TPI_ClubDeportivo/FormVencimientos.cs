@@ -53,10 +53,12 @@ namespace G5_TPI_ClubDeportivo
                     {
                         int renglon = dtgvVencimientos.Rows.Add();
                         dtgvVencimientos.Rows[renglon].Cells[0].Value = reader.GetInt32(0).ToString();
-                        dtgvVencimientos.Rows[renglon].Cells[1].Value = reader.IsDBNull(3) ? "Sin carnet" : reader.GetString(3);
+                        dtgvVencimientos.Rows[renglon].Cells[1].Value = reader.GetString(1);
                         dtgvVencimientos.Rows[renglon].Cells[2].Value = reader.GetString(2);
-                        dtgvVencimientos.Rows[renglon].Cells[3].Value = reader.GetString(1);
-                        dtgvVencimientos.Rows[renglon].Cells[4].Value = reader.GetDateTime(4).ToShortDateString();
+                        dtgvVencimientos.Rows[renglon].Cells[3].Value = reader.GetString(3);
+                        dtgvVencimientos.Rows[renglon].Cells[4].Value = reader.GetInt32(4).ToString();
+                        dtgvVencimientos.Rows[renglon].Cells[5].Value = reader.IsDBNull(5) ? "Sin carnet" : reader.GetString(5);
+                        dtgvVencimientos.Rows[renglon].Cells[6].Value = reader.GetDateTime(8).ToShortDateString();
                     }
                 }
                 else

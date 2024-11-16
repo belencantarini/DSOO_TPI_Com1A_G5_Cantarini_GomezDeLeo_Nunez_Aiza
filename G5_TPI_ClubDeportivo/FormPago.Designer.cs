@@ -49,7 +49,7 @@
             lblApellido = new Label();
             lblNombre = new Label();
             gpbPagar = new GroupBox();
-            btnVerCarnet = new Button();
+            btnVolverPago = new Button();
             btnVerComprobante = new Button();
             btnPagar = new Button();
             txtValorCuota = new TextBox();
@@ -276,7 +276,7 @@
             // 
             // gpbPagar
             // 
-            gpbPagar.Controls.Add(btnVerCarnet);
+            gpbPagar.Controls.Add(btnVolverPago);
             gpbPagar.Controls.Add(btnVerComprobante);
             gpbPagar.Controls.Add(btnPagar);
             gpbPagar.Controls.Add(txtValorCuota);
@@ -297,16 +297,16 @@
             gpbPagar.TabStop = false;
             gpbPagar.Text = "Pago";
             // 
-            // btnVerCarnet
+            // btnVolverPago
             // 
-            btnVerCarnet.Enabled = false;
-            btnVerCarnet.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            btnVerCarnet.Location = new Point(599, 210);
-            btnVerCarnet.Name = "btnVerCarnet";
-            btnVerCarnet.Size = new Size(211, 72);
-            btnVerCarnet.TabIndex = 20;
-            btnVerCarnet.Text = "Imprimit Carnet Generado";
-            btnVerCarnet.UseVisualStyleBackColor = true;
+            btnVolverPago.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            btnVolverPago.Location = new Point(599, 210);
+            btnVolverPago.Name = "btnVolverPago";
+            btnVolverPago.Size = new Size(211, 72);
+            btnVolverPago.TabIndex = 20;
+            btnVolverPago.Text = "Volver";
+            btnVolverPago.UseVisualStyleBackColor = true;
+            btnVolverPago.Click += btnVolverPago_Click;
             // 
             // btnVerComprobante
             // 
@@ -316,8 +316,9 @@
             btnVerComprobante.Name = "btnVerComprobante";
             btnVerComprobante.Size = new Size(211, 72);
             btnVerComprobante.TabIndex = 19;
-            btnVerComprobante.Text = "Imprimir Comprobante de Pago";
+            btnVerComprobante.Text = "Ver Ultima Factura";
             btnVerComprobante.UseVisualStyleBackColor = true;
+            btnVerComprobante.Click += btnVerComprobante_Click;
             // 
             // btnPagar
             // 
@@ -436,20 +437,16 @@
             // 
             // btnVolver
             // 
-            btnVolver.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            btnVolver.Location = new Point(417, 717);
+            btnVolver.Location = new Point(0, 0);
             btnVolver.Name = "btnVolver";
-            btnVolver.Size = new Size(149, 35);
-            btnVolver.TabIndex = 19;
-            btnVolver.Text = "Volver";
-            btnVolver.UseVisualStyleBackColor = true;
-            btnVolver.Click += btnVolver_Click;
+            btnVolver.Size = new Size(75, 23);
+            btnVolver.TabIndex = 0;
             // 
             // FormPago
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(970, 864);
+            ClientSize = new Size(970, 722);
             Controls.Add(btnVolver);
             Controls.Add(gpbPagar);
             Controls.Add(gpbCliente);
@@ -504,7 +501,7 @@
         private Label lblValorCuota;
         private Button btnPagar;
         private Button btnVerComprobante;
-        private Button btnVerCarnet;
+        private Button btnVolverPago;
         private Button btnVolver;
     }
 }

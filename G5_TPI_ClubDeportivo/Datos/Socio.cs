@@ -107,6 +107,57 @@ namespace G5_TPI_ClubDeportivo.Datos
             }
         }
 
+        public FormCarnetSocio cargarCarnet(int cliente, FormCarnetSocio carnet)
+        {
+            FormCarnetSocio carnetEmitido = carnet;
+
+            MySqlConnection sqlCon = new MySqlConnection();
+            try
+            {
+                string query;
+                sqlCon = Conexion.getInstancia().CrearConexion();
+                query = "select * from VistaSocios where ClienteID = @cliente;";
+                MySqlCommand comando = new MySqlCommand(query, sqlCon);
+                comando.CommandType = CommandType.Text;
+                comando.Parameters.AddWithValue("@cliente", cliente);
+                sqlCon.Open();
+
+                MySqlDataReader reader;
+                reader = comando.ExecuteReader();
+
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        carnetEmitido.CarnetSocioID = reader.IsDBNull(8) ? "No se ha emitido carnet" : reader.GetString(8);
+                        carnetEmitido.Apellido = reader.GetString(1);
+                        carnetEmitido.Nombre = reader.GetString(2);
+                        carnetEmitido.TipoDocumento = reader.GetString(3);
+                        carnetEmitido.NumeroDocumento = reader.GetInt32(4);
+                        carnetEmitido.FechaNacimiento = reader.GetDateTime(5);
+                        carnetEmitido.FechaInscripcion = reader.GetDateTime(7);
+                        carnetEmitido.AptoFisico = reader.IsDBNull(9) ? false : reader.GetBoolean(9);
+                        carnetEmitido.FechaVencimiento = reader.GetDateTime(10);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("No hay datos para cargar en el carnet.");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            // como proceso final
+            finally
+            {
+                if (sqlCon.State == ConnectionState.Open)
+                { sqlCon.Close(); };
+            }
+            return carnetEmitido;
+        }
 
 
 

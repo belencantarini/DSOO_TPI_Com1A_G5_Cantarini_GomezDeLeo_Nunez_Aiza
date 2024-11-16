@@ -16,6 +16,7 @@ namespace G5_TPI_ClubDeportivo
 {
     public partial class FormPago : Form
     {
+        public FormFactura factura = new FormFactura();
         public FormPago()
         {
             InitializeComponent();
@@ -23,6 +24,7 @@ namespace G5_TPI_ClubDeportivo
 
         private void FormPago_Load(object sender, EventArgs e)
         {
+
 
         }
 
@@ -232,7 +234,7 @@ namespace G5_TPI_ClubDeportivo
             // Validamos que los campos estén completos
             if (string.IsNullOrEmpty(txtClienteID.Text) || cboListaPlanActividad.SelectedIndex == -1 || cboMetodoPago.SelectedIndex == -1 || cboCuotas.SelectedIndex < 0)
             {
-                MessageBox.Show("Por favor, complete todos los campos para realizar el pago.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Por favor, complete todos los campos para realizar emitir la factura y realizar el pago.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -240,7 +242,8 @@ namespace G5_TPI_ClubDeportivo
             int id;
             id = identificadorPlanActividad(cboListaPlanActividad.Text);
 
-            // Guardo todos los parametros necesarios para la emision del pago en un objeto E_Pago
+
+            // Guardo todos los parametros necesarios para la emision de la factura y el pago en un objeto E_Pago
             Entidades.E_Pago pago = new Entidades.E_Pago();
             pago.ClienteID = Convert.ToInt32(txtClienteID.Text);
             pago.EsSocio = txtTipoCliente.Text == "Socio" ? true : false;
@@ -271,7 +274,6 @@ namespace G5_TPI_ClubDeportivo
 
             // Ahora creo una instancia de cliente Socio o No Socio para utilizar el metodo Registrar Pago
 
-
             int respuesta = 0;
 
             if (pago.EsSocio)
@@ -285,38 +287,51 @@ namespace G5_TPI_ClubDeportivo
                 respuesta = noSocio.RegistrarPago(pago);
             }
 
+            // Genero mi comprobante de pago todos los parametros necesarios en mi Factura
+            Datos.Pago nuevoPago = new Datos.Pago();
+
+
             // Vemos la respuesta del sistema al generar el pago
             switch (respuesta)
             {
                 case 1:
                     MessageBox.Show("El pago se efectuó correctamente.", "Pago Aceptado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    factura = nuevoPago.cargarComprobante(factura);
                     btnVerComprobante.Enabled = true;
-                    btnVerCarnet.Enabled = false;
+                    btnVolverPago.Enabled = false;
                     break;
                 case 2:
                     MessageBox.Show("El pago se efectuó correctamente y se generó un nuevo carnet de Socio. ¡Ahora puedes verlo!", "Pago Aceptado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    factura = nuevoPago.cargarComprobante(factura);
                     btnVerComprobante.Enabled = true;
-                    btnVerCarnet.Enabled = true;
+                    btnVolverPago.Enabled = true;
                     break;
                 case -1:
                     MessageBox.Show("El cliente no existe. Por favor, verifique los datos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     btnVerComprobante.Enabled = false;
-                    btnVerCarnet.Enabled = false;
+                    btnVolverPago.Enabled = false;
                     break;
                 case -2:
                     MessageBox.Show("Hubo un error al procesar el pago. Por favor, intente nuevamente.", "Error en SQL", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     btnVerComprobante.Enabled = false;
-                    btnVerCarnet.Enabled = false;
+                    btnVolverPago.Enabled = false;
                     break;
                 default:
                     MessageBox.Show("Ocurrió un error inesperado. Por favor, intente nuevamente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     btnVerComprobante.Enabled = false;
-                    btnVerCarnet.Enabled = false;
+                    btnVolverPago.Enabled = false;
                     break;
             }
         }
 
-        private void btnVolver_Click(object sender, EventArgs e)
+
+        private void btnVerComprobante_Click(object sender, EventArgs e)
+        {
+            factura.Show();
+            this.Hide();
+        }
+
+        private void btnVolverPago_Click(object sender, EventArgs e)
         {
             FormPrincipal Principal = new FormPrincipal();
             Principal.Show(); // llama al formulario 

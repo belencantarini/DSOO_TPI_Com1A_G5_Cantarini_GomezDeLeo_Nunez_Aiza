@@ -95,3 +95,6 @@ C:\Users\Belen\source\repos\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\G5_TPI_C
 C:\Users\Belen\source\repos\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\G5_TPI_ClubDeportivo\obj\Debug\net6.0-windows\ref\G5_TPI_ClubDeportivo.dll
 C:\Users\Belen\source\repos\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\G5_TPI_ClubDeportivo\obj\Debug\net6.0-windows\G5_TPI_ClubDeportivo.FormPlanesyActividades.resources
 C:\Users\Belen\source\repos\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\G5_TPI_ClubDeportivo\obj\Debug\net6.0-windows\G5_TPI_ClubDeportivo.FormPago.resources
+C:\Users\Belen\source\repos\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\G5_TPI_ClubDeportivo\obj\Debug\net6.0-windows\G5_TPI_ClubDeportivo.FormFactura.resources
+C:\Users\Belen\source\repos\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\G5_TPI_ClubDeportivo\obj\Debug\net6.0-windows\G5_TPI_ClubDeportivo.FormBuscarSocio.resources
+C:\Users\Belen\source\repos\DSOO_TPI_G5_Cantarini_GomezDeLeo_Nunez_Aiza\G5_TPI_ClubDeportivo\obj\Debug\net6.0-windows\G5_TPI_ClubDeportivo.FormCarnetSocio.resources

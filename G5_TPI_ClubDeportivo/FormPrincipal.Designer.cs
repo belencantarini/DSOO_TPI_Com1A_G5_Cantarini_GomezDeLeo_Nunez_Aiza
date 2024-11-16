@@ -35,6 +35,7 @@
             btnVencimientos = new Button();
             btnSalirSesion = new Button();
             btnListaSociosNoSocios = new Button();
+            btnCarnet = new Button();
             SuspendLayout();
             // 
             // lblIngreso
@@ -49,7 +50,7 @@
             // 
             // btnInscribirCliente
             // 
-            btnInscribirCliente.Location = new Point(25, 109);
+            btnInscribirCliente.Location = new Point(25, 117);
             btnInscribirCliente.Name = "btnInscribirCliente";
             btnInscribirCliente.Size = new Size(214, 89);
             btnInscribirCliente.TabIndex = 0;
@@ -59,7 +60,7 @@
             // 
             // btnSocios
             // 
-            btnSocios.Location = new Point(276, 251);
+            btnSocios.Location = new Point(276, 223);
             btnSocios.Name = "btnSocios";
             btnSocios.Size = new Size(214, 89);
             btnSocios.TabIndex = 2;
@@ -69,9 +70,9 @@
             // 
             // btnPagos
             // 
-            btnPagos.Location = new Point(25, 251);
+            btnPagos.Location = new Point(25, 333);
             btnPagos.Name = "btnPagos";
-            btnPagos.Size = new Size(214, 89);
+            btnPagos.Size = new Size(465, 62);
             btnPagos.TabIndex = 3;
             btnPagos.Text = "Pagar Membresias y Actividades";
             btnPagos.UseVisualStyleBackColor = true;
@@ -79,7 +80,7 @@
             // 
             // btnVencimientos
             // 
-            btnVencimientos.Location = new Point(25, 391);
+            btnVencimientos.Location = new Point(25, 411);
             btnVencimientos.Name = "btnVencimientos";
             btnVencimientos.Size = new Size(465, 62);
             btnVencimientos.TabIndex = 5;
@@ -89,7 +90,7 @@
             // 
             // btnSalirSesion
             // 
-            btnSalirSesion.Location = new Point(167, 530);
+            btnSalirSesion.Location = new Point(170, 524);
             btnSalirSesion.Name = "btnSalirSesion";
             btnSalirSesion.Size = new Size(179, 48);
             btnSalirSesion.TabIndex = 6;
@@ -99,7 +100,7 @@
             // 
             // btnListaSociosNoSocios
             // 
-            btnListaSociosNoSocios.Location = new Point(276, 109);
+            btnListaSociosNoSocios.Location = new Point(276, 117);
             btnListaSociosNoSocios.Name = "btnListaSociosNoSocios";
             btnListaSociosNoSocios.Size = new Size(214, 89);
             btnListaSociosNoSocios.TabIndex = 1;
@@ -107,11 +108,22 @@
             btnListaSociosNoSocios.UseVisualStyleBackColor = true;
             btnListaSociosNoSocios.Click += btnListaSociosNoSocios_Click;
             // 
+            // btnCarnet
+            // 
+            btnCarnet.Location = new Point(25, 223);
+            btnCarnet.Name = "btnCarnet";
+            btnCarnet.Size = new Size(214, 89);
+            btnCarnet.TabIndex = 7;
+            btnCarnet.Text = "Ver Carnet Socio";
+            btnCarnet.UseVisualStyleBackColor = true;
+            btnCarnet.Click += btnCarnet_Click;
+            // 
             // FormPrincipal
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(532, 600);
+            Controls.Add(btnCarnet);
             Controls.Add(btnListaSociosNoSocios);
             Controls.Add(btnSalirSesion);
             Controls.Add(btnVencimientos);
@@ -136,5 +148,6 @@
         private Button btnVencimientos;
         private Button btnSalirSesion;
         private Button btnListaSociosNoSocios;
+        private Button btnCarnet;
     }
 }
