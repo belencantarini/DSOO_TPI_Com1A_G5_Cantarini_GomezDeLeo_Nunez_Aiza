@@ -56,7 +56,7 @@
             lblInscripcionCliente.Location = new Point(228, 59);
             lblInscripcionCliente.Name = "lblInscripcionCliente";
             lblInscripcionCliente.Size = new Size(250, 32);
-            lblInscripcionCliente.TabIndex = 14;
+            lblInscripcionCliente.TabIndex = 0;
             lblInscripcionCliente.Text = "Inscripción del Cliente";
             // 
             // lblNombre
@@ -65,7 +65,7 @@
             lblNombre.Location = new Point(396, 130);
             lblNombre.Name = "lblNombre";
             lblNombre.Size = new Size(64, 20);
-            lblNombre.TabIndex = 13;
+            lblNombre.TabIndex = 2;
             lblNombre.Text = "Nombre";
             // 
             // lblApellido
@@ -74,7 +74,7 @@
             lblApellido.Location = new Point(65, 130);
             lblApellido.Name = "lblApellido";
             lblApellido.Size = new Size(66, 20);
-            lblApellido.TabIndex = 12;
+            lblApellido.TabIndex = 1;
             lblApellido.Text = "Apellido";
             // 
             // lblTipoDocumento
@@ -83,7 +83,7 @@
             lblTipoDocumento.Location = new Point(65, 200);
             lblTipoDocumento.Name = "lblTipoDocumento";
             lblTipoDocumento.Size = new Size(140, 20);
-            lblTipoDocumento.TabIndex = 11;
+            lblTipoDocumento.TabIndex = 3;
             lblTipoDocumento.Text = "Tipo de documento";
             // 
             // lblNumeroDocumento
@@ -92,7 +92,7 @@
             lblNumeroDocumento.Location = new Point(396, 200);
             lblNumeroDocumento.Name = "lblNumeroDocumento";
             lblNumeroDocumento.Size = new Size(164, 20);
-            lblNumeroDocumento.TabIndex = 10;
+            lblNumeroDocumento.TabIndex = 4;
             lblNumeroDocumento.Text = "Número de documento";
             // 
             // lblFechaNacimiento
@@ -101,7 +101,7 @@
             lblFechaNacimiento.Location = new Point(65, 274);
             lblFechaNacimiento.Name = "lblFechaNacimiento";
             lblFechaNacimiento.Size = new Size(146, 20);
-            lblFechaNacimiento.TabIndex = 9;
+            lblFechaNacimiento.TabIndex = 5;
             lblFechaNacimiento.Text = "Fecha de nacimiento";
             // 
             // dtpFechaNacimiento
@@ -111,7 +111,7 @@
             dtpFechaNacimiento.MaxDate = new DateTime(2099, 12, 31, 0, 0, 0, 0);
             dtpFechaNacimiento.Name = "dtpFechaNacimiento";
             dtpFechaNacimiento.Size = new Size(140, 27);
-            dtpFechaNacimiento.TabIndex = 4;
+            dtpFechaNacimiento.TabIndex = 5;
             dtpFechaNacimiento.Value = new DateTime(2024, 10, 15, 23, 47, 9, 109);
             // 
             // chkAptoFisico
@@ -120,7 +120,7 @@
             chkAptoFisico.Location = new Point(65, 355);
             chkAptoFisico.Name = "chkAptoFisico";
             chkAptoFisico.Size = new Size(160, 24);
-            chkAptoFisico.TabIndex = 5;
+            chkAptoFisico.TabIndex = 7;
             chkAptoFisico.Text = "Entrega Apto Físico";
             chkAptoFisico.UseVisualStyleBackColor = true;
             chkAptoFisico.KeyDown += chkAptoFisico_KeyDown;
@@ -130,14 +130,14 @@
             txtNombre.Location = new Point(396, 153);
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(270, 27);
-            txtNombre.TabIndex = 1;
+            txtNombre.TabIndex = 2;
             // 
             // txtApellido
             // 
             txtApellido.Location = new Point(65, 153);
             txtApellido.Name = "txtApellido";
             txtApellido.Size = new Size(270, 27);
-            txtApellido.TabIndex = 0;
+            txtApellido.TabIndex = 1;
             // 
             // cboTipoDocumento
             // 
@@ -147,21 +147,21 @@
             cboTipoDocumento.Location = new Point(65, 223);
             cboTipoDocumento.Name = "cboTipoDocumento";
             cboTipoDocumento.Size = new Size(270, 28);
-            cboTipoDocumento.TabIndex = 2;
+            cboTipoDocumento.TabIndex = 3;
             // 
             // txtNumeroDocumento
             // 
             txtNumeroDocumento.Location = new Point(396, 224);
             txtNumeroDocumento.Name = "txtNumeroDocumento";
             txtNumeroDocumento.Size = new Size(270, 27);
-            txtNumeroDocumento.TabIndex = 3;
+            txtNumeroDocumento.TabIndex = 4;
             // 
             // btnIngresarCliente
             // 
             btnIngresarCliente.Location = new Point(110, 440);
             btnIngresarCliente.Name = "btnIngresarCliente";
             btnIngresarCliente.Size = new Size(144, 40);
-            btnIngresarCliente.TabIndex = 7;
+            btnIngresarCliente.TabIndex = 8;
             btnIngresarCliente.Text = "INGRESAR";
             btnIngresarCliente.UseVisualStyleBackColor = true;
             btnIngresarCliente.Click += btnIngresarCliente_Click;
@@ -171,7 +171,7 @@
             btnLimpiar.Location = new Point(277, 440);
             btnLimpiar.Name = "btnLimpiar";
             btnLimpiar.Size = new Size(144, 40);
-            btnLimpiar.TabIndex = 8;
+            btnLimpiar.TabIndex = 9;
             btnLimpiar.Text = "LIMPIAR";
             btnLimpiar.UseVisualStyleBackColor = true;
             btnLimpiar.Click += btnLimpiar_Click;
@@ -181,7 +181,7 @@
             btnVolver.Location = new Point(436, 440);
             btnVolver.Name = "btnVolver";
             btnVolver.Size = new Size(144, 40);
-            btnVolver.TabIndex = 9;
+            btnVolver.TabIndex = 10;
             btnVolver.Text = "VOLVER";
             btnVolver.UseVisualStyleBackColor = true;
             btnVolver.Click += btnVolver_Click;

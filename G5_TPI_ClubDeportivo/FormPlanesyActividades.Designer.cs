@@ -61,7 +61,7 @@
             lblActividadesNoSocios.Location = new Point(51, 337);
             lblActividadesNoSocios.Name = "lblActividadesNoSocios";
             lblActividadesNoSocios.Size = new Size(321, 32);
-            lblActividadesNoSocios.TabIndex = 1;
+            lblActividadesNoSocios.TabIndex = 2;
             lblActividadesNoSocios.Text = "Actividades para NO SOCIOS";
             // 
             // dtgvActividades
@@ -99,7 +99,7 @@
             btnVolver.Location = new Point(562, 617);
             btnVolver.Name = "btnVolver";
             btnVolver.Size = new Size(157, 42);
-            btnVolver.TabIndex = 4;
+            btnVolver.TabIndex = 0;
             btnVolver.Text = "VOLVER";
             btnVolver.UseVisualStyleBackColor = true;
             btnVolver.Click += btnVolver_Click_1;
@@ -116,7 +116,7 @@
             dtgvPlanes.RowHeadersWidth = 51;
             dtgvPlanes.RowTemplate.Height = 29;
             dtgvPlanes.Size = new Size(1150, 188);
-            dtgvPlanes.TabIndex = 5;
+            dtgvPlanes.TabIndex = 1;
             // 
             // Plan
             // 

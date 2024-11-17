@@ -59,6 +59,7 @@
             lblVarFecha = new Label();
             lblTotal = new Label();
             lblVarTotal = new Label();
+            btnVolver = new Button();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
             SuspendLayout();
@@ -70,16 +71,16 @@
             lblFactura.Location = new Point(52, 33);
             lblFactura.Name = "lblFactura";
             lblFactura.Size = new Size(137, 32);
-            lblFactura.TabIndex = 4;
+            lblFactura.TabIndex = 0;
             lblFactura.Text = "Factura Nro";
             // 
             // btnImprimirFactura
             // 
             btnImprimirFactura.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            btnImprimirFactura.Location = new Point(284, 551);
+            btnImprimirFactura.Location = new Point(172, 542);
             btnImprimirFactura.Name = "btnImprimirFactura";
-            btnImprimirFactura.Size = new Size(211, 72);
-            btnImprimirFactura.TabIndex = 20;
+            btnImprimirFactura.Size = new Size(211, 55);
+            btnImprimirFactura.TabIndex = 0;
             btnImprimirFactura.Text = "Imprimir Factura";
             btnImprimirFactura.UseVisualStyleBackColor = true;
             btnImprimirFactura.Click += btnImprimirFactura_Click;
@@ -106,7 +107,7 @@
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
             tableLayoutPanel1.Size = new Size(706, 89);
-            tableLayoutPanel1.TabIndex = 21;
+            tableLayoutPanel1.TabIndex = 5;
             // 
             // txtVarNroDoc
             // 
@@ -114,7 +115,8 @@
             txtVarNroDoc.Name = "txtVarNroDoc";
             txtVarNroDoc.ReadOnly = true;
             txtVarNroDoc.Size = new Size(184, 27);
-            txtVarNroDoc.TabIndex = 31;
+            txtVarNroDoc.TabIndex = 7;
+            txtVarNroDoc.TabStop = false;
             // 
             // txtVarTipoDoc
             // 
@@ -122,7 +124,8 @@
             txtVarTipoDoc.Name = "txtVarTipoDoc";
             txtVarTipoDoc.ReadOnly = true;
             txtVarTipoDoc.Size = new Size(184, 27);
-            txtVarTipoDoc.TabIndex = 30;
+            txtVarTipoDoc.TabIndex = 5;
+            txtVarTipoDoc.TabStop = false;
             // 
             // txtVarNombre
             // 
@@ -130,7 +133,8 @@
             txtVarNombre.Name = "txtVarNombre";
             txtVarNombre.ReadOnly = true;
             txtVarNombre.Size = new Size(184, 27);
-            txtVarNombre.TabIndex = 29;
+            txtVarNombre.TabIndex = 3;
+            txtVarNombre.TabStop = false;
             // 
             // lblApellido
             // 
@@ -138,7 +142,7 @@
             lblApellido.Location = new Point(3, 0);
             lblApellido.Name = "lblApellido";
             lblApellido.Size = new Size(66, 20);
-            lblApellido.TabIndex = 24;
+            lblApellido.TabIndex = 0;
             lblApellido.Text = "Apellido";
             // 
             // lblNombre
@@ -147,7 +151,7 @@
             lblNombre.Location = new Point(355, 0);
             lblNombre.Name = "lblNombre";
             lblNombre.Size = new Size(64, 20);
-            lblNombre.TabIndex = 25;
+            lblNombre.TabIndex = 2;
             lblNombre.Text = "Nombre";
             // 
             // lblTipoDocumento
@@ -156,7 +160,7 @@
             lblTipoDocumento.Location = new Point(3, 44);
             lblTipoDocumento.Name = "lblTipoDocumento";
             lblTipoDocumento.Size = new Size(87, 40);
-            lblTipoDocumento.TabIndex = 26;
+            lblTipoDocumento.TabIndex = 4;
             lblTipoDocumento.Text = "Tipo de Documento";
             // 
             // lblNroDocumento
@@ -165,7 +169,7 @@
             lblNroDocumento.Location = new Point(355, 44);
             lblNroDocumento.Name = "lblNroDocumento";
             lblNroDocumento.Size = new Size(88, 40);
-            lblNroDocumento.TabIndex = 27;
+            lblNroDocumento.TabIndex = 6;
             lblNroDocumento.Text = "Numero de documento";
             // 
             // txtVarApellido
@@ -174,7 +178,8 @@
             txtVarApellido.Name = "txtVarApellido";
             txtVarApellido.ReadOnly = true;
             txtVarApellido.Size = new Size(184, 27);
-            txtVarApellido.TabIndex = 28;
+            txtVarApellido.TabIndex = 1;
+            txtVarApellido.TabStop = false;
             // 
             // lblVarNroFactura
             // 
@@ -183,7 +188,7 @@
             lblVarNroFactura.Location = new Point(195, 33);
             lblVarNroFactura.Name = "lblVarNroFactura";
             lblVarNroFactura.Size = new Size(28, 32);
-            lblVarNroFactura.TabIndex = 23;
+            lblVarNroFactura.TabIndex = 1;
             lblVarNroFactura.Text = "0";
             // 
             // lblDatosCliente
@@ -193,7 +198,7 @@
             lblDatosCliente.Location = new Point(52, 130);
             lblDatosCliente.Name = "lblDatosCliente";
             lblDatosCliente.Size = new Size(125, 20);
-            lblDatosCliente.TabIndex = 25;
+            lblDatosCliente.TabIndex = 4;
             lblDatosCliente.Text = "Datos del cliente";
             // 
             // label6
@@ -203,7 +208,7 @@
             label6.Location = new Point(52, 298);
             label6.Name = "label6";
             label6.Size = new Size(154, 20);
-            label6.TabIndex = 27;
+            label6.TabIndex = 6;
             label6.Text = "Datos de facturación";
             // 
             // tableLayoutPanel2
@@ -232,7 +237,7 @@
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
             tableLayoutPanel2.Size = new Size(706, 138);
-            tableLayoutPanel2.TabIndex = 26;
+            tableLayoutPanel2.TabIndex = 7;
             // 
             // txtVarCuotas
             // 
@@ -240,7 +245,8 @@
             txtVarCuotas.Name = "txtVarCuotas";
             txtVarCuotas.ReadOnly = true;
             txtVarCuotas.Size = new Size(184, 27);
-            txtVarCuotas.TabIndex = 35;
+            txtVarCuotas.TabIndex = 11;
+            txtVarCuotas.TabStop = false;
             // 
             // lblCuotas
             // 
@@ -248,7 +254,7 @@
             lblCuotas.Location = new Point(355, 92);
             lblCuotas.Name = "lblCuotas";
             lblCuotas.Size = new Size(54, 20);
-            lblCuotas.TabIndex = 34;
+            lblCuotas.TabIndex = 10;
             lblCuotas.Text = "Cuotas";
             // 
             // txtVarMetodoPago
@@ -257,7 +263,8 @@
             txtVarMetodoPago.Name = "txtVarMetodoPago";
             txtVarMetodoPago.ReadOnly = true;
             txtVarMetodoPago.Size = new Size(184, 27);
-            txtVarMetodoPago.TabIndex = 33;
+            txtVarMetodoPago.TabIndex = 9;
+            txtVarMetodoPago.TabStop = false;
             // 
             // lblMetodoPago
             // 
@@ -265,7 +272,7 @@
             lblMetodoPago.Location = new Point(3, 92);
             lblMetodoPago.Name = "lblMetodoPago";
             lblMetodoPago.Size = new Size(87, 40);
-            lblMetodoPago.TabIndex = 32;
+            lblMetodoPago.TabIndex = 8;
             lblMetodoPago.Text = "Método de Pago";
             // 
             // txtVarPrecioPlan
@@ -274,7 +281,8 @@
             txtVarPrecioPlan.Name = "txtVarPrecioPlan";
             txtVarPrecioPlan.ReadOnly = true;
             txtVarPrecioPlan.Size = new Size(184, 27);
-            txtVarPrecioPlan.TabIndex = 31;
+            txtVarPrecioPlan.TabIndex = 7;
+            txtVarPrecioPlan.TabStop = false;
             // 
             // txtVarPlan
             // 
@@ -282,7 +290,8 @@
             txtVarPlan.Name = "txtVarPlan";
             txtVarPlan.ReadOnly = true;
             txtVarPlan.Size = new Size(184, 27);
-            txtVarPlan.TabIndex = 30;
+            txtVarPlan.TabIndex = 5;
+            txtVarPlan.TabStop = false;
             // 
             // txtVarPrecioAct
             // 
@@ -290,7 +299,8 @@
             txtVarPrecioAct.Name = "txtVarPrecioAct";
             txtVarPrecioAct.ReadOnly = true;
             txtVarPrecioAct.Size = new Size(184, 27);
-            txtVarPrecioAct.TabIndex = 29;
+            txtVarPrecioAct.TabIndex = 3;
+            txtVarPrecioAct.TabStop = false;
             // 
             // lblActividad
             // 
@@ -298,7 +308,7 @@
             lblActividad.Location = new Point(3, 0);
             lblActividad.Name = "lblActividad";
             lblActividad.Size = new Size(72, 20);
-            lblActividad.TabIndex = 24;
+            lblActividad.TabIndex = 0;
             lblActividad.Text = "Actividad";
             // 
             // lblPrecioAct
@@ -307,7 +317,7 @@
             lblPrecioAct.Location = new Point(355, 0);
             lblPrecioAct.Name = "lblPrecioAct";
             lblPrecioAct.Size = new Size(50, 20);
-            lblPrecioAct.TabIndex = 25;
+            lblPrecioAct.TabIndex = 2;
             lblPrecioAct.Text = "Precio";
             // 
             // lblPlan
@@ -316,7 +326,7 @@
             lblPlan.Location = new Point(3, 46);
             lblPlan.Name = "lblPlan";
             lblPlan.Size = new Size(83, 40);
-            lblPlan.TabIndex = 26;
+            lblPlan.TabIndex = 4;
             lblPlan.Text = "Plan de Membresia";
             // 
             // lblPrecioPlan
@@ -325,7 +335,7 @@
             lblPrecioPlan.Location = new Point(355, 46);
             lblPrecioPlan.Name = "lblPrecioPlan";
             lblPrecioPlan.Size = new Size(50, 20);
-            lblPrecioPlan.TabIndex = 27;
+            lblPrecioPlan.TabIndex = 6;
             lblPrecioPlan.Text = "Precio";
             // 
             // txtVarActividad
@@ -334,7 +344,8 @@
             txtVarActividad.Name = "txtVarActividad";
             txtVarActividad.ReadOnly = true;
             txtVarActividad.Size = new Size(184, 27);
-            txtVarActividad.TabIndex = 28;
+            txtVarActividad.TabIndex = 1;
+            txtVarActividad.TabStop = false;
             // 
             // lblFecha
             // 
@@ -342,7 +353,7 @@
             lblFecha.Location = new Point(52, 82);
             lblFecha.Name = "lblFecha";
             lblFecha.Size = new Size(47, 20);
-            lblFecha.TabIndex = 28;
+            lblFecha.TabIndex = 2;
             lblFecha.Text = "Fecha";
             // 
             // lblVarFecha
@@ -351,7 +362,7 @@
             lblVarFecha.Location = new Point(105, 82);
             lblVarFecha.Name = "lblVarFecha";
             lblVarFecha.Size = new Size(15, 20);
-            lblVarFecha.TabIndex = 29;
+            lblVarFecha.TabIndex = 3;
             lblVarFecha.Text = "-";
             // 
             // lblTotal
@@ -361,7 +372,7 @@
             lblTotal.Location = new Point(471, 491);
             lblTotal.Name = "lblTotal";
             lblTotal.Size = new Size(48, 20);
-            lblTotal.TabIndex = 30;
+            lblTotal.TabIndex = 8;
             lblTotal.Text = "Total:";
             // 
             // lblVarTotal
@@ -371,14 +382,26 @@
             lblVarTotal.Location = new Point(524, 491);
             lblVarTotal.Name = "lblVarTotal";
             lblVarTotal.Size = new Size(18, 20);
-            lblVarTotal.TabIndex = 31;
+            lblVarTotal.TabIndex = 9;
             lblVarTotal.Text = "0";
+            // 
+            // btnVolver
+            // 
+            btnVolver.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            btnVolver.Location = new Point(425, 542);
+            btnVolver.Name = "btnVolver";
+            btnVolver.Size = new Size(211, 55);
+            btnVolver.TabIndex = 10;
+            btnVolver.Text = "Volver";
+            btnVolver.UseVisualStyleBackColor = true;
+            btnVolver.Click += btnVolver_Click;
             // 
             // FormFactura
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 635);
+            Controls.Add(btnVolver);
             Controls.Add(lblVarTotal);
             Controls.Add(lblTotal);
             Controls.Add(lblVarFecha);
@@ -435,5 +458,6 @@
         private Label lblVarFecha;
         private Label lblTotal;
         private Label lblVarTotal;
+        private Button btnVolver;
     }
 }

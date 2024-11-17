@@ -44,7 +44,7 @@ namespace G5_TPI_ClubDeportivo
                 txtVarNroDoc.Text = NumeroDocumento.ToString();
                 txtVarNacimiento.Text = FechaNacimiento.ToString("dd/MM/yyyy");
                 txtVarInscripcion.Text = FechaInscripcion.ToString("dd/MM/yyyy");
-                txtVarApto.Text = AptoFisico ? "Entregado":"Pendiente";
+                txtVarApto.Text = AptoFisico ? "Entregado" : "Pendiente";
                 txtVarVencimiento.Text = FechaVencimiento.ToString("dd/MM/yyyy");
 
             }
@@ -97,5 +97,6 @@ namespace G5_TPI_ClubDeportivo
             buscarSocio.Show(); // llama al formulario 
             this.Close();
         }
+
     }
 }

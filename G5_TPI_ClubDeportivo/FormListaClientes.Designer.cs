@@ -158,7 +158,7 @@
             lblListadoClientes.Location = new Point(74, 54);
             lblListadoClientes.Name = "lblListadoClientes";
             lblListadoClientes.Size = new Size(211, 32);
-            lblListadoClientes.TabIndex = 2;
+            lblListadoClientes.TabIndex = 0;
             lblListadoClientes.Text = "Listado de clientes";
             // 
             // FormListaClientes

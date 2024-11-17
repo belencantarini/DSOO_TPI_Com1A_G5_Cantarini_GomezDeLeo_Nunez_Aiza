@@ -61,7 +61,7 @@
             lblBuscarSocio.Location = new Point(38, 43);
             lblBuscarSocio.Name = "lblBuscarSocio";
             lblBuscarSocio.Size = new Size(280, 32);
-            lblBuscarSocio.TabIndex = 4;
+            lblBuscarSocio.TabIndex = 0;
             lblBuscarSocio.Text = "Imprimir Carnet de Socio";
             // 
             // gpbCliente
@@ -75,7 +75,7 @@
             gpbCliente.Location = new Point(38, 110);
             gpbCliente.Name = "gpbCliente";
             gpbCliente.Size = new Size(847, 281);
-            gpbCliente.TabIndex = 18;
+            gpbCliente.TabIndex = 0;
             gpbCliente.TabStop = false;
             gpbCliente.Text = "Cliente";
             // 
@@ -105,7 +105,7 @@
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
             tableLayoutPanel1.Size = new Size(810, 137);
-            tableLayoutPanel1.TabIndex = 17;
+            tableLayoutPanel1.TabIndex = 5;
             // 
             // txtFechaVencimiento
             // 
@@ -113,7 +113,8 @@
             txtFechaVencimiento.Name = "txtFechaVencimiento";
             txtFechaVencimiento.ReadOnly = true;
             txtFechaVencimiento.Size = new Size(219, 27);
-            txtFechaVencimiento.TabIndex = 29;
+            txtFechaVencimiento.TabIndex = 11;
+            txtFechaVencimiento.TabStop = false;
             txtFechaVencimiento.Visible = false;
             // 
             // lblFechaVencimiento
@@ -122,7 +123,7 @@
             lblFechaVencimiento.Location = new Point(406, 90);
             lblFechaVencimiento.Name = "lblFechaVencimiento";
             lblFechaVencimiento.Size = new Size(91, 40);
-            lblFechaVencimiento.TabIndex = 28;
+            lblFechaVencimiento.TabIndex = 10;
             lblFechaVencimiento.Text = "Fecha de Vencimiento";
             lblFechaVencimiento.Visible = false;
             // 
@@ -132,7 +133,8 @@
             txtCarnetSocio.Name = "txtCarnetSocio";
             txtCarnetSocio.ReadOnly = true;
             txtCarnetSocio.Size = new Size(215, 27);
-            txtCarnetSocio.TabIndex = 27;
+            txtCarnetSocio.TabIndex = 9;
+            txtCarnetSocio.TabStop = false;
             txtCarnetSocio.Visible = false;
             // 
             // lblCarnetSocio
@@ -141,7 +143,7 @@
             lblCarnetSocio.Location = new Point(3, 90);
             lblCarnetSocio.Name = "lblCarnetSocio";
             lblCarnetSocio.Size = new Size(114, 20);
-            lblCarnetSocio.TabIndex = 26;
+            lblCarnetSocio.TabIndex = 5;
             lblCarnetSocio.Text = "Carnet de Socio";
             lblCarnetSocio.Visible = false;
             // 
@@ -151,7 +153,8 @@
             txtTipoCliente.Name = "txtTipoCliente";
             txtTipoCliente.ReadOnly = true;
             txtTipoCliente.Size = new Size(219, 27);
-            txtTipoCliente.TabIndex = 25;
+            txtTipoCliente.TabIndex = 7;
+            txtTipoCliente.TabStop = false;
             // 
             // lblTipoCliente
             // 
@@ -159,7 +162,7 @@
             lblTipoCliente.Location = new Point(406, 45);
             lblTipoCliente.Name = "lblTipoCliente";
             lblTipoCliente.Size = new Size(110, 20);
-            lblTipoCliente.TabIndex = 24;
+            lblTipoCliente.TabIndex = 6;
             lblTipoCliente.Text = "Tipo de Cliente";
             // 
             // txtClienteID
@@ -168,7 +171,8 @@
             txtClienteID.Name = "txtClienteID";
             txtClienteID.ReadOnly = true;
             txtClienteID.Size = new Size(215, 27);
-            txtClienteID.TabIndex = 23;
+            txtClienteID.TabIndex = 5;
+            txtClienteID.TabStop = false;
             // 
             // lblClienteID
             // 
@@ -176,7 +180,7 @@
             lblClienteID.Location = new Point(3, 45);
             lblClienteID.Name = "lblClienteID";
             lblClienteID.Size = new Size(74, 20);
-            lblClienteID.TabIndex = 22;
+            lblClienteID.TabIndex = 4;
             lblClienteID.Text = "Cliente ID";
             // 
             // txtNombre
@@ -185,7 +189,8 @@
             txtNombre.Name = "txtNombre";
             txtNombre.ReadOnly = true;
             txtNombre.Size = new Size(219, 27);
-            txtNombre.TabIndex = 21;
+            txtNombre.TabIndex = 3;
+            txtNombre.TabStop = false;
             // 
             // txtApellido
             // 
@@ -193,7 +198,8 @@
             txtApellido.Name = "txtApellido";
             txtApellido.ReadOnly = true;
             txtApellido.Size = new Size(215, 27);
-            txtApellido.TabIndex = 19;
+            txtApellido.TabIndex = 1;
+            txtApellido.TabStop = false;
             // 
             // lblApellido
             // 
@@ -201,7 +207,7 @@
             lblApellido.Location = new Point(3, 0);
             lblApellido.Name = "lblApellido";
             lblApellido.Size = new Size(66, 20);
-            lblApellido.TabIndex = 18;
+            lblApellido.TabIndex = 0;
             lblApellido.Text = "Apellido";
             // 
             // lblNombre
@@ -210,7 +216,7 @@
             lblNombre.Location = new Point(406, 0);
             lblNombre.Name = "lblNombre";
             lblNombre.Size = new Size(64, 20);
-            lblNombre.TabIndex = 20;
+            lblNombre.TabIndex = 2;
             lblNombre.Text = "Nombre";
             // 
             // lblNumeroDocumento
@@ -219,7 +225,7 @@
             lblNumeroDocumento.Location = new Point(349, 46);
             lblNumeroDocumento.Name = "lblNumeroDocumento";
             lblNumeroDocumento.Size = new Size(164, 20);
-            lblNumeroDocumento.TabIndex = 14;
+            lblNumeroDocumento.TabIndex = 2;
             lblNumeroDocumento.Text = "Número de documento";
             // 
             // btnBuscarCliente
@@ -228,7 +234,7 @@
             btnBuscarCliente.Location = new Point(661, 64);
             btnBuscarCliente.Name = "btnBuscarCliente";
             btnBuscarCliente.Size = new Size(149, 35);
-            btnBuscarCliente.TabIndex = 16;
+            btnBuscarCliente.TabIndex = 3;
             btnBuscarCliente.Text = "Buscar";
             btnBuscarCliente.UseVisualStyleBackColor = true;
             btnBuscarCliente.Click += btnBuscarCliente_Click;
@@ -239,7 +245,7 @@
             lblTipoDocumento.Location = new Point(18, 46);
             lblTipoDocumento.Name = "lblTipoDocumento";
             lblTipoDocumento.Size = new Size(140, 20);
-            lblTipoDocumento.TabIndex = 15;
+            lblTipoDocumento.TabIndex = 1;
             lblTipoDocumento.Text = "Tipo de documento";
             // 
             // txtNumeroDocumento
@@ -247,7 +253,7 @@
             txtNumeroDocumento.Location = new Point(349, 70);
             txtNumeroDocumento.Name = "txtNumeroDocumento";
             txtNumeroDocumento.Size = new Size(270, 27);
-            txtNumeroDocumento.TabIndex = 13;
+            txtNumeroDocumento.TabIndex = 2;
             // 
             // cboTipoDocumento
             // 
@@ -257,7 +263,7 @@
             cboTipoDocumento.Location = new Point(18, 69);
             cboTipoDocumento.Name = "cboTipoDocumento";
             cboTipoDocumento.Size = new Size(270, 28);
-            cboTipoDocumento.TabIndex = 12;
+            cboTipoDocumento.TabIndex = 1;
             // 
             // btnVolverBuscarSocio
             // 
@@ -265,7 +271,7 @@
             btnVolverBuscarSocio.Location = new Point(557, 407);
             btnVolverBuscarSocio.Name = "btnVolverBuscarSocio";
             btnVolverBuscarSocio.Size = new Size(211, 72);
-            btnVolverBuscarSocio.TabIndex = 21;
+            btnVolverBuscarSocio.TabIndex = 2;
             btnVolverBuscarSocio.Text = "Volver";
             btnVolverBuscarSocio.UseVisualStyleBackColor = true;
             btnVolverBuscarSocio.Click += btnVolverBuscarSocio_Click;
@@ -277,7 +283,7 @@
             btnImprimirCarnet.Location = new Point(170, 407);
             btnImprimirCarnet.Name = "btnImprimirCarnet";
             btnImprimirCarnet.Size = new Size(293, 72);
-            btnImprimirCarnet.TabIndex = 22;
+            btnImprimirCarnet.TabIndex = 1;
             btnImprimirCarnet.Text = "Ver Carnet de Socio";
             btnImprimirCarnet.UseVisualStyleBackColor = true;
             btnImprimirCarnet.Click += btnImprimirCarnet_Click;

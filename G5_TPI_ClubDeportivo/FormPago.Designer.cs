@@ -63,7 +63,6 @@
             lblPlanActividad = new Label();
             cboListaPlanActividad = new ComboBox();
             lblPago = new Label();
-            btnVolver = new Button();
             gpbCliente.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
             gpbPagar.SuspendLayout();
@@ -76,7 +75,7 @@
             lblPagarTitulo.Location = new Point(66, 38);
             lblPagarTitulo.Name = "lblPagarTitulo";
             lblPagarTitulo.Size = new Size(383, 32);
-            lblPagarTitulo.TabIndex = 3;
+            lblPagarTitulo.TabIndex = 0;
             lblPagarTitulo.Text = "Pago de Membresias y Actividades";
             // 
             // txtNumeroDocumento
@@ -84,7 +83,7 @@
             txtNumeroDocumento.Location = new Point(349, 70);
             txtNumeroDocumento.Name = "txtNumeroDocumento";
             txtNumeroDocumento.Size = new Size(270, 27);
-            txtNumeroDocumento.TabIndex = 13;
+            txtNumeroDocumento.TabIndex = 3;
             // 
             // cboTipoDocumento
             // 
@@ -94,7 +93,7 @@
             cboTipoDocumento.Location = new Point(18, 69);
             cboTipoDocumento.Name = "cboTipoDocumento";
             cboTipoDocumento.Size = new Size(270, 28);
-            cboTipoDocumento.TabIndex = 12;
+            cboTipoDocumento.TabIndex = 1;
             // 
             // lblNumeroDocumento
             // 
@@ -102,7 +101,7 @@
             lblNumeroDocumento.Location = new Point(349, 46);
             lblNumeroDocumento.Name = "lblNumeroDocumento";
             lblNumeroDocumento.Size = new Size(164, 20);
-            lblNumeroDocumento.TabIndex = 14;
+            lblNumeroDocumento.TabIndex = 2;
             lblNumeroDocumento.Text = "Número de documento";
             // 
             // lblTipoDocumento
@@ -111,7 +110,7 @@
             lblTipoDocumento.Location = new Point(18, 46);
             lblTipoDocumento.Name = "lblTipoDocumento";
             lblTipoDocumento.Size = new Size(140, 20);
-            lblTipoDocumento.TabIndex = 15;
+            lblTipoDocumento.TabIndex = 0;
             lblTipoDocumento.Text = "Tipo de documento";
             // 
             // btnBuscarCliente
@@ -120,7 +119,7 @@
             btnBuscarCliente.Location = new Point(661, 64);
             btnBuscarCliente.Name = "btnBuscarCliente";
             btnBuscarCliente.Size = new Size(149, 35);
-            btnBuscarCliente.TabIndex = 16;
+            btnBuscarCliente.TabIndex = 4;
             btnBuscarCliente.Text = "Buscar";
             btnBuscarCliente.UseVisualStyleBackColor = true;
             btnBuscarCliente.Click += btnBuscarCliente_Click;
@@ -136,7 +135,7 @@
             gpbCliente.Location = new Point(66, 87);
             gpbCliente.Name = "gpbCliente";
             gpbCliente.Size = new Size(847, 281);
-            gpbCliente.TabIndex = 17;
+            gpbCliente.TabIndex = 1;
             gpbCliente.TabStop = false;
             gpbCliente.Text = "Cliente";
             // 
@@ -166,7 +165,7 @@
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
             tableLayoutPanel1.Size = new Size(810, 137);
-            tableLayoutPanel1.TabIndex = 17;
+            tableLayoutPanel1.TabIndex = 5;
             // 
             // txtFechaVencimiento
             // 
@@ -174,7 +173,8 @@
             txtFechaVencimiento.Name = "txtFechaVencimiento";
             txtFechaVencimiento.ReadOnly = true;
             txtFechaVencimiento.Size = new Size(219, 27);
-            txtFechaVencimiento.TabIndex = 29;
+            txtFechaVencimiento.TabIndex = 11;
+            txtFechaVencimiento.TabStop = false;
             txtFechaVencimiento.Visible = false;
             // 
             // lblFechaVencimiento
@@ -183,7 +183,7 @@
             lblFechaVencimiento.Location = new Point(406, 90);
             lblFechaVencimiento.Name = "lblFechaVencimiento";
             lblFechaVencimiento.Size = new Size(91, 40);
-            lblFechaVencimiento.TabIndex = 28;
+            lblFechaVencimiento.TabIndex = 10;
             lblFechaVencimiento.Text = "Fecha de Vencimiento";
             lblFechaVencimiento.Visible = false;
             // 
@@ -193,7 +193,8 @@
             txtCarnetSocio.Name = "txtCarnetSocio";
             txtCarnetSocio.ReadOnly = true;
             txtCarnetSocio.Size = new Size(215, 27);
-            txtCarnetSocio.TabIndex = 27;
+            txtCarnetSocio.TabIndex = 9;
+            txtCarnetSocio.TabStop = false;
             txtCarnetSocio.Visible = false;
             // 
             // lblCarnetSocio
@@ -202,7 +203,7 @@
             lblCarnetSocio.Location = new Point(3, 90);
             lblCarnetSocio.Name = "lblCarnetSocio";
             lblCarnetSocio.Size = new Size(114, 20);
-            lblCarnetSocio.TabIndex = 26;
+            lblCarnetSocio.TabIndex = 8;
             lblCarnetSocio.Text = "Carnet de Socio";
             lblCarnetSocio.Visible = false;
             // 
@@ -212,7 +213,8 @@
             txtTipoCliente.Name = "txtTipoCliente";
             txtTipoCliente.ReadOnly = true;
             txtTipoCliente.Size = new Size(219, 27);
-            txtTipoCliente.TabIndex = 25;
+            txtTipoCliente.TabIndex = 7;
+            txtTipoCliente.TabStop = false;
             // 
             // lblTipoCliente
             // 
@@ -220,7 +222,7 @@
             lblTipoCliente.Location = new Point(406, 45);
             lblTipoCliente.Name = "lblTipoCliente";
             lblTipoCliente.Size = new Size(110, 20);
-            lblTipoCliente.TabIndex = 24;
+            lblTipoCliente.TabIndex = 6;
             lblTipoCliente.Text = "Tipo de Cliente";
             // 
             // txtClienteID
@@ -229,7 +231,8 @@
             txtClienteID.Name = "txtClienteID";
             txtClienteID.ReadOnly = true;
             txtClienteID.Size = new Size(215, 27);
-            txtClienteID.TabIndex = 23;
+            txtClienteID.TabIndex = 5;
+            txtClienteID.TabStop = false;
             // 
             // lblClienteID
             // 
@@ -237,7 +240,7 @@
             lblClienteID.Location = new Point(3, 45);
             lblClienteID.Name = "lblClienteID";
             lblClienteID.Size = new Size(74, 20);
-            lblClienteID.TabIndex = 22;
+            lblClienteID.TabIndex = 4;
             lblClienteID.Text = "Cliente ID";
             // 
             // txtNombre
@@ -246,7 +249,8 @@
             txtNombre.Name = "txtNombre";
             txtNombre.ReadOnly = true;
             txtNombre.Size = new Size(219, 27);
-            txtNombre.TabIndex = 21;
+            txtNombre.TabIndex = 3;
+            txtNombre.TabStop = false;
             // 
             // txtApellido
             // 
@@ -254,7 +258,8 @@
             txtApellido.Name = "txtApellido";
             txtApellido.ReadOnly = true;
             txtApellido.Size = new Size(215, 27);
-            txtApellido.TabIndex = 19;
+            txtApellido.TabIndex = 1;
+            txtApellido.TabStop = false;
             // 
             // lblApellido
             // 
@@ -262,7 +267,7 @@
             lblApellido.Location = new Point(3, 0);
             lblApellido.Name = "lblApellido";
             lblApellido.Size = new Size(66, 20);
-            lblApellido.TabIndex = 18;
+            lblApellido.TabIndex = 0;
             lblApellido.Text = "Apellido";
             // 
             // lblNombre
@@ -271,7 +276,7 @@
             lblNombre.Location = new Point(406, 0);
             lblNombre.Name = "lblNombre";
             lblNombre.Size = new Size(64, 20);
-            lblNombre.TabIndex = 20;
+            lblNombre.TabIndex = 2;
             lblNombre.Text = "Nombre";
             // 
             // gpbPagar
@@ -293,7 +298,7 @@
             gpbPagar.Location = new Point(66, 386);
             gpbPagar.Name = "gpbPagar";
             gpbPagar.Size = new Size(847, 301);
-            gpbPagar.TabIndex = 18;
+            gpbPagar.TabIndex = 2;
             gpbPagar.TabStop = false;
             gpbPagar.Text = "Pago";
             // 
@@ -303,7 +308,7 @@
             btnVolverPago.Location = new Point(599, 210);
             btnVolverPago.Name = "btnVolverPago";
             btnVolverPago.Size = new Size(211, 72);
-            btnVolverPago.TabIndex = 20;
+            btnVolverPago.TabIndex = 13;
             btnVolverPago.Text = "Volver";
             btnVolverPago.UseVisualStyleBackColor = true;
             btnVolverPago.Click += btnVolverPago_Click;
@@ -315,7 +320,7 @@
             btnVerComprobante.Location = new Point(323, 210);
             btnVerComprobante.Name = "btnVerComprobante";
             btnVerComprobante.Size = new Size(211, 72);
-            btnVerComprobante.TabIndex = 19;
+            btnVerComprobante.TabIndex = 12;
             btnVerComprobante.Text = "Ver Ultima Factura";
             btnVerComprobante.UseVisualStyleBackColor = true;
             btnVerComprobante.Click += btnVerComprobante_Click;
@@ -326,7 +331,7 @@
             btnPagar.Location = new Point(21, 210);
             btnPagar.Name = "btnPagar";
             btnPagar.Size = new Size(211, 72);
-            btnPagar.TabIndex = 18;
+            btnPagar.TabIndex = 11;
             btnPagar.Text = "Efectuar Pago";
             btnPagar.UseVisualStyleBackColor = true;
             btnPagar.Click += btnPagar_Click;
@@ -338,6 +343,7 @@
             txtValorCuota.ReadOnly = true;
             txtValorCuota.Size = new Size(123, 27);
             txtValorCuota.TabIndex = 10;
+            txtValorCuota.TabStop = false;
             txtValorCuota.Visible = false;
             // 
             // lblValorCuota
@@ -352,6 +358,7 @@
             // 
             // cboCuotas
             // 
+            cboCuotas.DropDownStyle = ComboBoxStyle.DropDownList;
             cboCuotas.Enabled = false;
             cboCuotas.FormattingEnabled = true;
             cboCuotas.Items.AddRange(new object[] { "1", "3", "6", "12" });
@@ -372,6 +379,7 @@
             // 
             // cboMetodoPago
             // 
+            cboMetodoPago.DropDownStyle = ComboBoxStyle.DropDownList;
             cboMetodoPago.Enabled = false;
             cboMetodoPago.FormattingEnabled = true;
             cboMetodoPago.Items.AddRange(new object[] { "Efectivo", "Transferencia", "Tarjeta de Debito", "Tarjeta de Credito" });
@@ -397,6 +405,7 @@
             txtPrecio.ReadOnly = true;
             txtPrecio.Size = new Size(153, 27);
             txtPrecio.TabIndex = 4;
+            txtPrecio.TabStop = false;
             // 
             // lblPrecio
             // 
@@ -413,17 +422,18 @@
             lblPlanActividad.Location = new Point(21, 89);
             lblPlanActividad.Name = "lblPlanActividad";
             lblPlanActividad.Size = new Size(117, 20);
-            lblPlanActividad.TabIndex = 2;
+            lblPlanActividad.TabIndex = 1;
             lblPlanActividad.Text = "Plan o Actividad";
             // 
             // cboListaPlanActividad
             // 
+            cboListaPlanActividad.DropDownStyle = ComboBoxStyle.DropDownList;
             cboListaPlanActividad.Enabled = false;
             cboListaPlanActividad.FormattingEnabled = true;
             cboListaPlanActividad.Location = new Point(155, 86);
             cboListaPlanActividad.Name = "cboListaPlanActividad";
             cboListaPlanActividad.Size = new Size(164, 28);
-            cboListaPlanActividad.TabIndex = 1;
+            cboListaPlanActividad.TabIndex = 2;
             cboListaPlanActividad.SelectedIndexChanged += cboListaPlanActividad_SelectedIndexChanged;
             // 
             // lblPago
@@ -435,19 +445,11 @@
             lblPago.TabIndex = 0;
             lblPago.Text = "Por favor, indique que plan de membresia o actividad que desea abonar.";
             // 
-            // btnVolver
-            // 
-            btnVolver.Location = new Point(0, 0);
-            btnVolver.Name = "btnVolver";
-            btnVolver.Size = new Size(75, 23);
-            btnVolver.TabIndex = 0;
-            // 
             // FormPago
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(970, 722);
-            Controls.Add(btnVolver);
             Controls.Add(gpbPagar);
             Controls.Add(gpbCliente);
             Controls.Add(lblPagarTitulo);
@@ -502,6 +504,5 @@
         private Button btnPagar;
         private Button btnVerComprobante;
         private Button btnVolverPago;
-        private Button btnVolver;
     }
 }

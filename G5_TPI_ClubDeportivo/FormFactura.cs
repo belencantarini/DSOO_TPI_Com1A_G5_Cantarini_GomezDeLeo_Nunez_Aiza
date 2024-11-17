@@ -79,15 +79,17 @@ namespace G5_TPI_ClubDeportivo
 
 
         // Boton Imprimir
-            private void btnImprimirFactura_Click(object sender, EventArgs e)
+        private void btnImprimirFactura_Click(object sender, EventArgs e)
         {
             // Ocultamos el boton para imprimir
             btnImprimirFactura.Visible = false;
+            btnVolver.Visible = false;
 
             PrintDocument pd = new PrintDocument();
             pd.PrintPage += new PrintPageEventHandler(ImprimirForm1);
             pd.Print();
             btnImprimirFactura.Visible = true; // visualizamos nuevamente el boton
+            btnVolver.Visible = true;
 
             // Volvemos al form de inicio
             MessageBox.Show("Operación existosa", "AVISO DEL SISTEMA",
@@ -98,6 +100,11 @@ namespace G5_TPI_ClubDeportivo
 
         }
 
-
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            FormPago pago = new FormPago();
+            pago.Show();
+            this.Close();
+        }
     }
 }
