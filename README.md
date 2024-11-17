@@ -38,4 +38,3 @@ En la base de datos se han proporcionado algunos registros de clientes:
 
 **No Socios**
 - **DNI**: `11111111`  
-- **Contraseña**: `87654321`
