@@ -169,6 +169,9 @@ begin
 end //
 delimiter ;
 
+-- in Nombre , in Apellido , in TipoDocumento , in NumeroDocumento , in FechaNacimiento, in AptoFisico, out RespuestaCliente)
+-- call nuevoSocio('Damian', 'Gomez', 'DNI', 22222222, '1990-05-15',true, @Respuesta);
+-- select @Respuesta;
 
 delimiter // 
 drop procedure if exists DSOO_C1A_G5_TPI_Cantarini_GomezDeLeo_Nunez_Aiza.nuevoNoSocio //
@@ -200,14 +203,17 @@ begin
 end //
 delimiter ;
 
+-- in Nombre , in Apellido , in TipoDocumento , in NumeroDocumento , in FechaNacimiento, in AptoFisico, out RespuestaCliente)
+ -- call nuevoNoSocio('Ezequiel', 'Fernandez', 'DNI', 33333333, '1985-05-15',true, @Respuesta);
+ -- select @Respuesta;
+
+
 /* **************************************************************************************************************************** */
 -- Procedimiento obtener datos Cliente
 
 -- Cambio el delimitador para poder crear el procedimiendo
 delimiter //
-
 drop procedure if exists DSOO_C1A_G5_TPI_Cantarini_GomezDeLeo_Nunez_Aiza.obtenerDatosCliente //
-
 create procedure obtenerDatosCliente(
     in TipoDocumento varchar(15), 
     in NumeroDocumento int, 
@@ -252,11 +258,12 @@ delimiter ;
 -- out ExisteCliente,VarClienteID,VarTipoCliente,VarApellido,VarNombre,VarFechaNacimiento,VarEdad,FechaInscripcion,VarAptoFisico,VarCarnetSocioID,VarFechaVencimientoCuota,VarActivo
 -- call obtenerDatosCliente('DNI',12345678,@ExisteCliente,@VarClienteID,@VarTipoCliente,@VarApellido,@VarNombre,@VarFechaNacimiento,@VarEdad,@FechaInscripcion,@VarAptoFisico,@VarCarnetSocioID,@VarFechaVencimientoCuota,@VarActivo);
 -- select @ExisteCliente,@VarClienteID,@VarTipoCliente,@VarApellido,@VarNombre,@VarFechaNacimiento,@VarEdad,@FechaInscripcion,@VarAptoFisico,@VarCarnetSocioID,@VarFechaVencimientoCuota,@VarActivo;
--- call obtenerDatosCliente('DNI',12345678,@ExisteCliente,@VarClienteID,@VarTipoCliente,@VarApellido,@VarNombre,@VarFechaNacimiento,@VarEdad,@FechaInscripcion,@VarAptoFisico,@VarCarnetSocioID,@VarFechaVencimientoCuota,@VarActivo);
+-- call obtenerDatosCliente('DNI',11111111,@ExisteCliente,@VarClienteID,@VarTipoCliente,@VarApellido,@VarNombre,@VarFechaNacimiento,@VarEdad,@FechaInscripcion,@VarAptoFisico,@VarCarnetSocioID,@VarFechaVencimientoCuota,@VarActivo);
+-- select @ExisteCliente,@VarClienteID,@VarTipoCliente,@VarApellido,@VarNombre,@VarFechaNacimiento,@VarEdad,@FechaInscripcion,@VarAptoFisico,@VarCarnetSocioID,@VarFechaVencimientoCuota,@VarActivo;
+-- call obtenerDatosCliente('DNI',0000,@ExisteCliente,@VarClienteID,@VarTipoCliente,@VarApellido,@VarNombre,@VarFechaNacimiento,@VarEdad,@FechaInscripcion,@VarAptoFisico,@VarCarnetSocioID,@VarFechaVencimientoCuota,@VarActivo);
 -- select @ExisteCliente,@VarClienteID,@VarTipoCliente,@VarApellido,@VarNombre,@VarFechaNacimiento,@VarEdad,@FechaInscripcion,@VarAptoFisico,@VarCarnetSocioID,@VarFechaVencimientoCuota,@VarActivo;
 
 /* **************************************************************************************************************************** */
-
 -- Procedimiento Nuevo Pago y Emision de Carnet de Socio
 
 -- Cambio el delimitador para poder crear el procedimiendo
@@ -279,6 +286,7 @@ begin
     declare fechaActual date default current_date;
 	declare nuevaFechaVencimiento date;
 	declare FechaVencimientoCuota date;
+    
     -- Control de errores SQL
     declare exit handler for sqlexception
     begin
@@ -354,10 +362,13 @@ end //
 delimiter ;
 
 -- in VarClienteID,EsSocio,VarMembresiaID,VarActividadID,VarMetodoPago,VarCuotas,out Respuesta
--- call registrarPago(1, true, 2,null,'Tarjeta',3, @Respuesta);
+ -- call registrarPago(1, true, 2,null,'Tarjeta',3, @Respuesta);
 -- select @Respuesta;
 -- select*from pago;
 -- select*from socio;
+-- call registrarPago(3, false, null,3,'Efectivo',1, @Respuesta);
+-- select @Respuesta;
+-- select*from pago;
 -- select*from nosocio;
 
 /* **************************************************************************************************************************** */
@@ -463,12 +474,6 @@ insert into Socio (CarnetSocioID, ClienteID, FechaVencimientoCuota, Activo) valu
 
 insert into NoSocio (ClienteID) values (3);
 
-call nuevoSocio('Damian', 'Gomez', 'DNI', 22222222, '1990-05-15',true, @Respuesta);
--- select @Respuesta;
-
--- call ingresoLogin('AdministradorPrueba','adm123');
--- call ingresoLogin('NoExiste','NoExiste');
-
 
 /* **************************************************************************************************************************** */
 -- Consultas a mi base de datos     
@@ -491,7 +496,7 @@ select * from VistaUltimoRecibo;
 show events like 'ActualizarEstadoSocios';
 
 
-call registrarPago(1, true, 2,null,'Tarjeta',3, @Respuesta);
-select @Respuesta;
-call registrarPago(3, false, null,2,'Tarjeta',1, @Respuesta);
-select @Respuesta;
+-- call registrarPago(1, true, 2,null,'Tarjeta',3, @Respuesta);
+-- select @Respuesta;
+-- call registrarPago(3, false, null,2,'Tarjeta',1, @Respuesta);
+-- select @Respuesta;

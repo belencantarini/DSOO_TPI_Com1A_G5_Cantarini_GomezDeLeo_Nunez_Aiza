@@ -22,9 +22,9 @@ namespace G5_TPI_ClubDeportivo.Datos
             bool correcto = false;
             int mensaje;
 
-            string T_servidor = "localhost";
-            string T_puerto = "3306";
-            string T_usuario = "root";
+            string T_servidor = "";
+            string T_puerto = "";
+            string T_usuario = "";
             string T_clave = "";
 
             while (correcto != true)

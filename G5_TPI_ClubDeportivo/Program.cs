@@ -4,6 +4,7 @@ namespace G5_TPI_ClubDeportivo
     {
         /// <summary>
         ///  The main entry point for the application.
+        ///  
         /// </summary>
         [STAThread]
         static void Main()
