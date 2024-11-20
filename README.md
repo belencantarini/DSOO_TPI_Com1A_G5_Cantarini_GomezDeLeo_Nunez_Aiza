@@ -14,6 +14,9 @@ Este repositorio contiene el *Trabajo práctico integrador** de la **Tecnicatura
 
 El objetivo de esta fase es desarrollar un sistema que aplique los principios de la **programación orientada a objetos** (POO) a través de la creación de clases, herencia, encapsulamiento, y polimorfismo. Este trabajo integra teoría y práctica, brindando una solución funcional orientada a las necesidades planteadas en el proyecto.
 
+## Video de Coloquio
+Para visualizar la presentación en formato de video de este trabajo, se proporciona la siguiente dirección de enlace: **(https://youtu.be/CG8w4xylpZg)**.
+
 ## Base de datos
 Previo a la ejecución de la aplicación debe crear la base de datos correspondiente. La misma se encuentra adjunta en la carpeta bajo el nombre: **DSOO_TPI_Com1A_G5_Cantarini_GomezDeLeo_Nunez_Aiza.sql**.
 
